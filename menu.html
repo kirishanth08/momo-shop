@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu by Category — Chopsticks | Steamed Momos, Wok Noodles &amp; Coolers</title>
+  <meta name="description" content="Explore Chopsticks street food menu: 9 steamed momo varieties, 9 kurkure & fried momos, smoking wok noodles, Himalayan thukpa, and chilled coolers.">
+
+  <!-- Favicon: Inline SVG with #EC5B38 Circle, Crossed Chopsticks & Momo -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23EC5B38'/%3E%3Cpath d='M16 18 L48 46 M48 18 L16 46' stroke='%23FCF2E5' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M22 34 C22 27 42 27 42 34 C42 43 22 43 22 34 Z' fill='%23FCF2E5' stroke='%23524646' stroke-width='2'/%3E%3Cpath d='M26 24 Q28 19 26 15 M32 23 Q34 18 32 14 M38 24 Q40 19 38 15' stroke='%23FCF2E5' stroke-width='2.5' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Plus Jakarta Sans & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Custom Brand Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       GLOBAL HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main Navigation">
+        <!-- SVG Brand Emblem Logo -->
+        <a href="index.html" class="brand-logo-link" aria-label="Chopsticks Home">
+          <svg class="brand-logo-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="30" fill="#FCF2E5" stroke="#EC5B38" stroke-width="2.5"/>
+            <!-- Steam Wisps -->
+            <path d="M26 19C25 15 28 12 26 9" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+            <path d="M32 17C31 13 34 11 32 8" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+            <path d="M38 19C37 15 40 12 38 9" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+            <!-- Momo -->
+            <path d="M20 36C20 28 25 24 32 24C39 24 44 28 44 36C44 42 38 45 32 45C26 45 20 42 20 36Z" fill="#FFFFFF" stroke="#524646" stroke-width="2"/>
+            <path d="M26 28C28 30 29 32 29 35M32 25V35M38 28C36 30 35 32 35 35" stroke="#A8A492" stroke-width="1.5" stroke-linecap="round"/>
+            <!-- Crossed Chopsticks -->
+            <line x1="12" y1="20" x2="52" y2="48" stroke="#524646" stroke-width="3.5" stroke-linecap="round"/>
+            <line x1="52" y1="20" x2="12" y2="48" stroke="#EC5B38" stroke-width="3.5" stroke-linecap="round"/>
+            <circle cx="32" cy="34" r="2.5" fill="#EC5B38"/>
+          </svg>
+          <div class="brand-text-wrap">
+            <span class="brand-name">Chopsticks</span>
+            <span class="brand-subtitle">MOMOS &amp; CHINESE</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links-desktop">
+          <!-- Home with Dropdown -->
+          <li class="nav-link-item nav-dropdown-wrap">
+            <a href="index.html" class="nav-dropdown-trigger">
+              Home
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <ul class="nav-dropdown-menu">
+              <li>
+                <a href="index.html" class="nav-dropdown-item">
+                  <span class="icon">🏮</span>
+                  <div>
+                    <div>Home 1: Classic Street</div>
+                    <small style="font-size: 0.72rem; color: var(--color-stone-muted);">The Authentic Stall</small>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="home-2.html" class="nav-dropdown-item">
+                  <span class="icon">🥟</span>
+                  <div>
+                    <div>Home 2: Steamed vs Fried</div>
+                    <small style="font-size: 0.72rem; color: var(--color-chilli-accent);">Playful Battle Arena</small>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- About next to Home -->
+          <li class="nav-link-item"><a href="about.html">About</a></li>
+
+          <!-- Menu -->
+          <li class="nav-link-item"><a href="menu.html" class="active">Menu</a></li>
+
+          <!-- Combos & Deals -->
+          <li class="nav-link-item"><a href="combos.html">Combos &amp; Deals</a></li>
+
+          <!-- Blog next to Combos -->
+          <li class="nav-link-item"><a href="blog.html">Blog</a></li>
+
+          <!-- Contact & Stall -->
+          <li class="nav-link-item"><a href="contact.html">Contact &amp; Stall</a></li>
+        </ul>
+
+        <!-- Toggles & CTA Group -->
+        <div class="nav-cta-wrap">
+          <!-- Dark Mode Toggle Button -->
+          <button type="button" class="nav-action-btn theme-toggle-btn" aria-label="Toggle dark mode">
+            <svg class="icon-sun" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <span class="btn-tooltip-badge">Dark Mode</span>
+          </button>
+
+          <!-- RTL Direction Toggle Button -->
+          <button type="button" class="nav-action-btn rtl-toggle-btn" aria-label="Toggle RTL text direction">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
+            <span class="btn-tooltip-badge">Switch RTL</span>
+          </button>
+
+          <!-- Shopping Cart Icon with Badge -->
+          <a href="cart.html" class="nav-action-btn nav-cart-btn" aria-label="View Shopping Cart">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="cart-badge-count">0</span>
+            <span class="btn-tooltip-badge">Cart</span>
+          </a>
+
+          <!-- Quick Takeaway CTA -->
+          <a href="checkout.html" class="btn-chopsticks btn-primary-chilli btn-sm-chop nav-cta-desktop">
+            Checkout
+          </a>
+
+          <!-- Mobile Toggle -->
+          <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+        <!-- Mobile Dropdown Menu -->
+    <div class="mobile-nav-menu" id="mobileNavMenu">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home 1: Classic Street</a></li>
+        <li><a href="home-2.html">Home 2: Steamed vs Fried</a></li>
+        <li><a href="about.html">About Chopsticks</a></li>
+        <li><a href="menu.html" class="active">Menu (Momos & Wok)</a></li>
+        <li><a href="combos.html">Combos & Deals</a></li>
+        <li><a href="blog.html">Blog & Stories</a></li>
+        <li><a href="contact.html">Contact & Stall Map</a></li>
+        <li><a href="cart.html">Cart (<span class="cart-badge-count">0</span>)</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       PAGE 2: MENU BY CATEGORY (7 SEGMENTS)
+       ======================================================================== -->
+  <main>
+    <!-- SEGMENT 1: MENU PAGE HERO & SEARCH BAR -->
+    <section class="page-hero-banner hero-bg-menu text-center">
+      <div class="container">
+        <div class="hero-pill">
+          <span>🥟</span> Street Food Craft &amp; Sizzling Wok
+        </div>
+        <h1 class="hero-title">Our Street Food Craft</h1>
+        <p class="hero-subtitle">
+          Every dumpling is hand-pinched within hours of serving using 100% freshly rolled dough, wholesome fillings, and mountain herbs. Absolutely no artificial preservatives or frozen imports.
+        </p>
+
+        <!-- Interactive Search Bar -->
+        <div class="menu-search-wrapper mx-auto" style="max-width: 580px;">
+          <svg class="search-icon-pos" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input type="text" id="menuSearchInput" class="menu-search-input" placeholder="Search momos, noodles, spicy gravies, coolers..." aria-label="Search dishes in menu">
+        </div>
+      </div>
+    </section>
+
+    <!-- SEGMENT 2: STICKY CATEGORY FILTER BAR -->
+    <div class="sticky-filter-wrapper">
+      <div class="container">
+        <div class="filter-pills-scroll" role="tablist">
+          <button type="button" class="filter-pill-btn active" data-filter="all">
+            All Dishes <span class="pill-count">30</span>
+          </button>
+          <button type="button" class="filter-pill-btn" data-filter="steamed">
+            Steamed Momos <span class="pill-count">9</span>
+          </button>
+          <button type="button" class="filter-pill-btn" data-filter="fried">
+            Fried &amp; Kurkure <span class="pill-count">9</span>
+          </button>
+          <button type="button" class="filter-pill-btn" data-filter="wok">
+            Wok Bowls &amp; Mains <span class="pill-count">6</span>
+          </button>
+          <button type="button" class="filter-pill-btn" data-filter="soups">
+            Soups &amp; Coolers <span class="pill-count">6</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CATALOG CONTAINER -->
+    <div class="container py-4" id="menuCatalog">
+
+      <!-- SEGMENT 3: STEAMED MOMOS SELECTION (9 ITEMS) -->
+      <section class="category-section-block" data-category-section="steamed">
+        <div class="category-header-wrap">
+          <div>
+            <h2 class="category-title">
+              <span>🥟</span> Steamed Momos
+            </h2>
+            <p class="category-subtitle">
+              Traditional Tibetan-Himalayan style bamboo-steamed dumplings with juicy core &amp; clear broth.
+            </p>
+          </div>
+          <span class="badge" style="background-color: var(--color-accent-soft); color: var(--color-chilli-accent); font-size: 0.85rem; padding: 0.4rem 0.8rem; border-radius: var(--radius-full);">9 Varieties</span>
+        </div>
+
+        <div class="menu-items-grid">
+          <!-- 1. Classic Darjeeling Veg Momo -->
+          <div class="food-card menu-dish-item" data-category="steamed" data-diet="veg">
+            <div class="food-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=500&q=80" alt="Classic Darjeeling Veg Momo">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge veg" title="Vegetarian"></span>
+                <span class="spice-rating" title="Mild">🌶️</span>
+              </div>
+              <h3 class="food-card-title">Classic Darjeeling Veg Momo</h3>
+              <p class="food-card-desc">Finely minced mountain cabbage, carrots, French beans, ginger, and melted butter herbs in paper-thin pastry.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹100 <small>6 pcs</small> / ₹150 <small>10 pcs</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Classic Darjeeling Veg Momo" data-price="100" data-portion="6 pcs" data-img="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=500&q=80" data-diet="veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Schezwan Chicken Momo -->
+          <div class="food-card menu-dish-item" data-category="steamed" data-diet="non-veg">
+            <span class="chef-badge">Spicy Pick</span>
+            <div class="food-card-img-wrap">
+              <img src="assets/images/menu page/Schezwan Chicken Momo.jpg" alt="Schezwan Chicken Momo">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge non-veg" title="Non-Vegetarian"></span>
+                <span class="spice-rating" title="Spicy">🌶️🌶️🌶️</span>
+              </div>
+              <h3 class="food-card-title">Schezwan Chicken Momo</h3>
+              <p class="food-card-desc">Tender chicken mince pre-marinated in fiery Sichuan pepper oil, crushed roasted garlic, and scallions.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹130 <small>6 pcs</small> / ₹190 <small>10 pcs</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Schezwan Chicken Momo" data-price="130" data-portion="6 pcs" data-img="assets/images/menu page/Schezwan Chicken Momo.jpg" data-diet="non-veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Corn & Cheese Momo -->
+          <div class="food-card menu-dish-item" data-category="steamed" data-diet="veg">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/dishes/sweet-corn-cheese-steamed.jpg" alt="Corn & Cheese Momo">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge veg" title="Vegetarian"></span>
+                <span class="spice-rating" title="Mild">🌶️</span>
+              </div>
+              <h3 class="food-card-title">Sweet Corn &amp; Cheese Momo</h3>
+              <p class="food-card-desc">Golden sweet American corn kernels melted with mozzarella, mild cheddar, and cracked black pepper.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹130 <small>6 pcs</small> / ₹190 <small>10 pcs</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Sweet Corn & Cheese Momo" data-price="130" data-portion="6 pcs" data-img="assets/images/dishes/sweet-corn-cheese-steamed.jpg" data-diet="veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Juicy Mutton Steamed Momo -->
+          <div class="food-card menu-dish-item" data-category="steamed" data-diet="non-veg">
+            <span class="chef-badge">Weekend Special</span>
+            <div class="food-card-img-wrap">
+              <img src="assets/images/dishes/juicy-mutton-steamed.jpg" alt="Juicy Mutton Steamed Momo">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge non-veg" title="Non-Vegetarian"></span>
+                <span class="spice-rating" title="Medium">🌶️🌶️</span>
+              </div>
+              <h3 class="food-card-title">Juicy Mutton Steamed Momo</h3>
+              <p class="food-card-desc">Slow-braised spiced minced mutton bursting with aromatic fat broth and crushed Himalayan cumin.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹170 <small>6 pcs</small> / ₹250 <small>10 pcs</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Juicy Mutton Steamed Momo" data-price="170" data-portion="6 pcs" data-img="assets/images/dishes/juicy-mutton-steamed.jpg" data-diet="non-veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Paneer Spinach Green Momo -->
+          <div class="food-card menu-dish-item" data-category="steamed" data-diet="veg">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/menu page/Paneer & Spinach Green Momo.jpg" alt="Paneer Spinach Green Momo">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge veg" title="Vegetarian"></span>
+                <span class="spice-rating" title="Mild">🌶️</span>
+              </div>
+              <h3 class="food-card-title">Paneer &amp; Spinach Green Momo</h3>
+              <p class="food-card-desc">Freshly crumbled soft malai paneer folded with shredded baby spinach, toasted cumin, and white pepper.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹120 <small>6 pcs</small> / ₹180 <small>10 pcs</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Paneer & Spinach Green Momo" data-price="120" data-portion="6 pcs" data-img="assets/images/menu page/Paneer & Spinach Green Momo.jpg" data-diet="veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Spicy Mushroom Dumpling -->
+          <div class="food-card menu-dish-item" data-category="steamed" data-diet="veg">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/menu page/Spicy Shiitake & Button Mushroom.jpg" alt="Spicy Mushroom Dumpling">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge veg" title="Vegetarian"></span>
+                <span class="spice-rating" title="Spicy">🌶️🌶️</span>
+              </div>
+              <h3 class="food-card-title">Spicy Shiitake &amp; Button Mushroom</h3>
+              <p class="food-card-desc">Woody button and shiitake mushrooms sautéed in dark soya, crushed green chilli, and toasted sesame.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹125 <small>6 pcs</small> / ₹185 <small>10 pcs</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Spicy Shiitake & Button Mushroom" data-price="125" data-portion="6 pcs" data-img="assets/images/menu page/Spicy Shiitake & Button Mushroom.jpg" data-diet="veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Classic Chicken Steamed Momo -->
+          <div class="food-card menu-dish-item" data-category="steamed" data-diet="non-veg">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/dishes/darjeeling-chicken-steamed.jpg" alt="Classic Chicken Steamed Momo">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge non-veg" title="Non-Vegetarian"></span>
+                <span class="spice-rating" title="Medium">🌶️🌶️</span>
+              </div>
+              <h3 class="food-card-title">Classic Chicken Steamed Momo</h3>
+              <p class="food-card-desc">Our everyday bestseller: minced chicken leg and breast, spring onions, ginger juice, and steaming broth.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹120 <small>6 pcs</small> / ₹180 <small>10 pcs</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Classic Chicken Steamed Momo" data-price="120" data-portion="6 pcs" data-img="assets/images/dishes/darjeeling-chicken-steamed.jpg" data-diet="non-veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Prawn & Chive Steamed Momo -->
+          <div class="food-card menu-dish-item" data-category="steamed" data-diet="non-veg">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/menu page/Prawn & Asian Chive Momo.jpg" alt="Prawn & Chive Steamed Momo">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge non-veg" title="Non-Vegetarian"></span>
+                <span class="spice-rating" title="Mild">🌶️</span>
+              </div>
+              <h3 class="food-card-title">Prawn &amp; Asian Chive Momo</h3>
+              <p class="food-card-desc">Sweet minced coastal tiger prawns tossed with fresh garlic chives and fragrant sesame oil drop.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹180 <small>6 pcs</small> / ₹260 <small>10 pcs</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Prawn & Asian Chive Momo" data-price="180" data-portion="6 pcs" data-img="assets/images/menu page/Prawn & Asian Chive Momo.jpg" data-diet="non-veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. Himalayan Herb Butter Paneer Momo -->
+          <div class="food-card menu-dish-item" data-category="steamed" data-diet="veg">
+            <span class="chef-badge">New Craft</span>
+            <div class="food-card-img-wrap">
+              <img src="assets/images/menu page/Himalayan Herb Butter Paneer.jpg" alt="Himalayan Herb Butter Paneer Momo">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge veg" title="Vegetarian"></span>
+                <span class="spice-rating" title="Medium">🌶️🌶️</span>
+              </div>
+              <h3 class="food-card-title">Himalayan Herb Butter Paneer</h3>
+              <p class="food-card-desc">Fresh malai cottage cheese blended with crushed black cardamom, scallions, and churned mountain herb butter in silky pleats.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹130 <small>6 pcs</small> / ₹190 <small>10 pcs</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Himalayan Herb Butter Paneer" data-price="130" data-portion="6 pcs" data-img="assets/images/menu page/Himalayan Herb Butter Paneer.jpg" data-diet="veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEGMENT 4: FRIED, KOTHEY & KURKURE MOMOS (9 ITEMS) -->
+      <section class="category-section-block" data-category-section="fried">
+        <div class="category-header-wrap">
+          <div>
+            <h2 class="category-title">
+              <span>🔥</span> Fried, Kothey &amp; Kurkure Momos
+            </h2>
+            <p class="category-subtitle">
+              Audible crunch, crispy pan-seared bottoms, and peri-peri or schezwan tosses.
+            </p>
+          </div>
+          <span class="badge" style="background-color: var(--color-accent-soft); color: var(--color-chilli-accent); font-size: 0.85rem; padding: 0.4rem 0.8rem; border-radius: var(--radius-full);">9 Varieties</span>
+        </div>
+
+        <div class="menu-items-grid">
+          <!-- 1. Crispy Fried Veg Momo -->
+          <div class="food-card menu-dish-item" data-category="fried" data-diet="veg">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/menu page/Crispy Fried Veg Momo.jpg" alt="Crispy Fried Veg Momo">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge veg" title="Vegetarian"></span>
+                <span class="spice-rating" title="Mild">🌶️</span>
+              </div>
+              <h3 class="food-card-title">Crispy Fried Veg Momo</h3>
+              <p class="food-card-desc">Golden crisp exterior, juicy seasoned vegetable filling, served with sesame garlic mayonnaise.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹115 <small>6 pcs</small> / ₹170 <small>10 pcs</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Crispy Fried Veg Momo" data-price="115" data-portion="6 pcs" data-img="assets/images/menu page/Crispy Fried Veg Momo.jpg" data-diet="veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Crispy Fried Chicken Momo -->
+          <div class="food-card menu-dish-item" data-category="fried" data-diet="non-veg">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/menu page/Crispy Fried Chicken Momo.jpg" alt="Crispy Fried Chicken Momo">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge non-veg" title="Non-Vegetarian"></span>
+                <span class="spice-rating" title="Medium">🌶️🌶️</span>
+              </div>
+              <h3 class="food-card-title">Crispy Fried Chicken Momo</h3>
+              <p class="food-card-desc">Deep fried till blistered and crackly, keeping the chicken stuffing sizzling hot and succulent inside.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹135 <small>6 pcs</small> / ₹195 <small>10 pcs</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Crispy Fried Chicken Momo" data-price="135" data-portion="6 pcs" data-img="assets/images/menu page/Crispy Fried Chicken Momo.jpg" data-diet="non-veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Pan-Fried Veg Kothey in Spicy Gravy -->
+          <div class="food-card menu-dish-item" data-category="fried" data-diet="veg">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/menu page/Pan-Fried Veg Kothey Gravy.jpg" alt="Pan-Fried Veg Kothey">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge veg" title="Vegetarian"></span>
+                <span class="spice-rating" title="Spicy">🌶️🌶️🌶️</span>
+              </div>
+              <h3 class="food-card-title">Pan-Fried Veg Kothey Gravy</h3>
+              <p class="food-card-desc">Potstickers pan-seared to a dark crust on one side, then drowned in hot sweet-tangy street gravy.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹140 <small>/ 6 pcs</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Pan-Fried Veg Kothey Gravy" data-price="140" data-portion="6 pcs" data-img="assets/images/menu page/Pan-Fried Veg Kothey Gravy.jpg" data-diet="veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Chicken Kothey Potstickers -->
+          <div class="food-card menu-dish-item" data-category="fried" data-diet="non-veg">
+            <span class="chef-badge">Chef's Special</span>
+            <div class="food-card-img-wrap">
+              <img src="assets/images/dishes/pan-fried-kothey-skirt.jpg" alt="Chicken Kothey Potstickers">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge non-veg" title="Non-Vegetarian"></span>
+                <span class="spice-rating" title="Medium">🌶️🌶️</span>
+              </div>
+              <h3 class="food-card-title">Chicken Kothey Potstickers</h3>
+              <p class="food-card-desc">Half-steamed, half-skillet seared with crispy lace webbing and drenched in ginger-scallion drizzle.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹150 <small>/ 6 pcs</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Chicken Kothey Potstickers" data-price="150" data-portion="6 pcs" data-img="assets/images/dishes/pan-fried-kothey-skirt.jpg" data-diet="non-veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Kurkure Crunch Paneer Momo -->
+          <div class="food-card menu-dish-item" data-category="fried" data-diet="veg">
+            <span class="chef-badge">Super Crunch</span>
+            <div class="food-card-img-wrap">
+              <img src="assets/images/menu page/Kurkure Crunch Paneer Momo.jpg" alt="Kurkure Crunch Paneer Momo">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge veg" title="Vegetarian"></span>
+                <span class="spice-rating" title="Spicy">🌶️🌶️</span>
+              </div>
+              <h3 class="food-card-title">Kurkure Crunch Paneer Momo</h3>
+              <p class="food-card-desc">Double-dipped in spiced cereal flakes, fried to maximum audible crunch, and dusted with peri-peri.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹150 <small>/ 6 pcs</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Kurkure Crunch Paneer Momo" data-price="150" data-portion="6 pcs" data-img="assets/images/menu page/Kurkure Crunch Paneer Momo.jpg" data-diet="veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Kurkure Crunch Chicken Momo -->
+          <div class="food-card menu-dish-item" data-category="fried" data-diet="non-veg">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/menu page/Kurkure Crunch Chicken Momo.jpg" alt="Kurkure Crunch Chicken Momo">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge non-veg" title="Non-Vegetarian"></span>
+                <span class="spice-rating" title="Spicy">🌶️🌶️</span>
+              </div>
+              <h3 class="food-card-title">Kurkure Crunch Chicken Momo</h3>
+              <p class="food-card-desc">Extra crispy batter-coated chicken dumplings served with sweet garlic sesame dip and pickled radish.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹160 <small>/ 6 pcs</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Kurkure Crunch Chicken Momo" data-price="160" data-portion="6 pcs" data-img="assets/images/menu page/Kurkure Crunch Chicken Momo.jpg" data-diet="non-veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Tandoori Tossed Veg Momo -->
+          <div class="food-card menu-dish-item" data-category="fried" data-diet="veg">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/menu page/Tandoori Tossed Veg Momo.jpg" alt="Tandoori Tossed Veg Momo">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge veg" title="Vegetarian"></span>
+                <span class="spice-rating" title="Spicy">🌶️🌶️🌶️</span>
+              </div>
+              <h3 class="food-card-title">Tandoori Tossed Veg Momo</h3>
+              <p class="food-card-desc">Wok-charred in roasted tandoori marinade, kasuri methi, butter, and served with laccha onions.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹145 <small>/ 6 pcs</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Tandoori Tossed Veg Momo" data-price="145" data-portion="6 pcs" data-img="assets/images/menu page/Tandoori Tossed Veg Momo.jpg" data-diet="veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Schezwan Glazed Tossed Chicken Momo -->
+          <div class="food-card menu-dish-item" data-category="fried" data-diet="non-veg">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/menu page/Schezwan Glazed Chicken Momo.jpg" alt="Schezwan Glazed Tossed Chicken Momo">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge non-veg" title="Non-Vegetarian"></span>
+                <span class="spice-rating" title="Inferno">🌶️🌶️🌶️</span>
+              </div>
+              <h3 class="food-card-title">Schezwan Glazed Chicken Momo</h3>
+              <p class="food-card-desc">Flash-fried momos wok-tossed with Sichuan peppercorns, roasted dry chillies, and honey glaze.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹165 <small>/ 6 pcs</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Schezwan Glazed Chicken Momo" data-price="165" data-portion="6 pcs" data-img="assets/images/menu page/Schezwan Glazed Chicken Momo.jpg" data-diet="non-veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. Crispy Cheese Burst Kurkure Momo -->
+          <div class="food-card menu-dish-item" data-category="fried" data-diet="veg">
+            <span class="chef-badge">Crunch Pick</span>
+            <div class="food-card-img-wrap">
+              <img src="assets/images/menu page/Crispy Cheese Burst Kurkure Momo.jpg" alt="Crispy Cheese Burst Kurkure Momo">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge veg" title="Vegetarian"></span>
+                <span class="spice-rating" title="Mild">🌶️</span>
+              </div>
+              <h3 class="food-card-title">Crispy Cheese Burst Kurkure Momo</h3>
+              <p class="food-card-desc">Molten mozzarella &amp; cheddar core encased in spiced cornflake crunch, flash-fried golden with peri-peri dust.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹150 <small>/ 6 pcs</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Crispy Cheese Burst Kurkure Momo" data-price="150" data-portion="6 pcs" data-img="assets/images/menu page/Crispy Cheese Burst Kurkure Momo.jpg" data-diet="veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEGMENT 5: WOK SPECIALTIES & CHINESE STREET MAINS (6 ITEMS) -->
+      <section class="category-section-block" data-category-section="wok">
+        <div class="category-header-wrap">
+          <div>
+            <h2 class="category-title">
+              <span>🥢</span> Wok Specialties &amp; Chinese Street Mains
+            </h2>
+            <p class="category-subtitle">
+              Sizzling iron wok heat, charred garlic, and authentic street wok noodles &amp; bowls.
+            </p>
+          </div>
+          <span class="badge" style="background-color: var(--color-accent-soft); color: var(--color-chilli-accent); font-size: 0.85rem; padding: 0.4rem 0.8rem; border-radius: var(--radius-full);">6 Varieties</span>
+        </div>
+
+        <div class="menu-items-grid">
+          <!-- 1. Hakka Street Veg Noodles -->
+          <div class="food-card menu-dish-item" data-category="wok" data-diet="veg">
+            <div class="food-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=500&q=80" alt="Hakka Street Veg Noodles">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge veg" title="Vegetarian"></span>
+                <span class="spice-rating" title="Mild">🌶️</span>
+              </div>
+              <h3 class="food-card-title">Hakka Street Veg Noodles</h3>
+              <p class="food-card-desc">Long wheat noodles tossed with shredded cabbage, capsicum, carrots, light soya, and white pepper.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹130 <small>/ Box</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Hakka Street Veg Noodles" data-price="130" data-portion="1 Wok Box" data-img="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=500&q=80" data-diet="veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Chicken Hakka Wok Noodles -->
+          <div class="food-card menu-dish-item" data-category="wok" data-diet="non-veg">
+            <div class="food-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80" alt="Chicken Hakka Wok Noodles">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge non-veg" title="Non-Vegetarian"></span>
+                <span class="spice-rating" title="Medium">🌶️🌶️</span>
+              </div>
+              <h3 class="food-card-title">Chicken Hakka Wok Noodles</h3>
+              <p class="food-card-desc">Juicy chicken strips, egg scrambles, and crunchy scallions tossed with noodles over screaming hot flame.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹160 <small>/ Box</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Chicken Hakka Wok Noodles" data-price="160" data-portion="1 Wok Box" data-img="https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80" data-diet="non-veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Triple Schezwan Fried Rice with Gravy -->
+          <div class="food-card menu-dish-item" data-category="wok" data-diet="veg">
+            <span class="chef-badge">Full Feast</span>
+            <div class="food-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=500&q=80" alt="Triple Schezwan Fried Rice">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge veg" title="Vegetarian"></span>
+                <span class="spice-rating" title="Spicy">🌶️🌶️🌶️</span>
+              </div>
+              <h3 class="food-card-title">Triple Schezwan Rice Bowl</h3>
+              <p class="food-card-desc">Red schezwan fried rice, hakka noodles, crispy fried noodle crown, and a tub of hot vegetable gravy.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹175 <small>/ Meal Box</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Triple Schezwan Rice Bowl" data-price="175" data-portion="1 Meal Box" data-img="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=500&q=80" data-diet="veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Chilli Paneer Gravy with Fried Rice -->
+          <div class="food-card menu-dish-item" data-category="wok" data-diet="veg">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/menu page/Chilli Paneer Gravy Bowl.jpg" alt="Chilli Paneer Gravy">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge veg" title="Vegetarian"></span>
+                <span class="spice-rating" title="Spicy">🌶️🌶️</span>
+              </div>
+              <h3 class="food-card-title">Chilli Paneer Gravy Bowl</h3>
+              <p class="food-card-desc">Batter-fried paneer cubes in velvety soya-garlic chilli sauce accompanied by garlic wok rice.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹165 <small>/ Bowl</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Chilli Paneer Gravy Bowl" data-price="165" data-portion="1 Wok Bowl" data-img="assets/images/menu page/Chilli Paneer Gravy Bowl.jpg" data-diet="veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Crispy Honey Chilli Potatoes -->
+          <div class="food-card menu-dish-item" data-category="wok" data-diet="veg">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/menu page/Crispy Honey Chilli Potatoes.jpg" alt="Crispy Honey Chilli Potatoes">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge veg" title="Vegetarian"></span>
+                <span class="spice-rating" title="Sweet & Spicy">🌶️</span>
+              </div>
+              <h3 class="food-card-title">Crispy Honey Chilli Potatoes</h3>
+              <p class="food-card-desc">Double-crisped potato fingers tossed in honey, red chilli paste, toasted sesame seeds, and spring onion.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹120 <small>/ Plate</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Crispy Honey Chilli Potatoes" data-price="120" data-portion="1 Plate" data-img="assets/images/menu page/Crispy Honey Chilli Potatoes.jpg" data-diet="veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Fiery Chilli Chicken Dry -->
+          <div class="food-card menu-dish-item" data-category="wok" data-diet="non-veg">
+            <span class="chef-badge">Spicy Hit</span>
+            <div class="food-card-img-wrap">
+              <img src="assets/images/menu page/Fiery Chilli Chicken Dry.jpg" alt="Fiery Chilli Chicken Dry">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge non-veg" title="Non-Vegetarian"></span>
+                <span class="spice-rating" title="Inferno">🌶️🌶️🌶️</span>
+              </div>
+              <h3 class="food-card-title">Fiery Chilli Chicken Dry</h3>
+              <p class="food-card-desc">Boneless chicken nuggets wok-tossed with slit green chillies, crushed garlic, dark soya, and cilantro.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹170 <small>/ Plate</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Fiery Chilli Chicken Dry" data-price="170" data-portion="1 Plate" data-img="assets/images/menu page/Fiery Chilli Chicken Dry.jpg" data-diet="non-veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEGMENT 6: SOUPS, THUKPA & REFRESHING COOLERS (6 ITEMS) -->
+      <section class="category-section-block" data-category-section="soups">
+        <div class="category-header-wrap">
+          <div>
+            <h2 class="category-title">
+              <span>🍲</span> Soups, Thukpa &amp; Coolers
+            </h2>
+            <p class="category-subtitle">
+              Piping hot soul-warming broths and chilled street coolers to beat the spice fire.
+            </p>
+          </div>
+          <span class="badge" style="background-color: var(--color-accent-soft); color: var(--color-chilli-accent); font-size: 0.85rem; padding: 0.4rem 0.8rem; border-radius: var(--radius-full);">6 Items</span>
+        </div>
+
+        <div class="menu-items-grid">
+          <!-- 1. Hot & Sour Street Soup -->
+          <div class="food-card menu-dish-item" data-category="soups" data-diet="veg">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/menu page/Hot & Sour Street Soup.jpg" alt="Hot & Sour Soup">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge veg" title="Vegetarian"></span>
+                <span class="spice-rating" title="Spicy">🌶️🌶️</span>
+              </div>
+              <h3 class="food-card-title">Hot &amp; Sour Street Soup</h3>
+              <p class="food-card-desc">Thick peppery broth loaded with chopped tofu, bamboo shoots, mushrooms, and vinegar kick.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹90 <small>/ Bowl</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Hot & Sour Street Soup" data-price="90" data-portion="1 Bowl" data-img="assets/images/menu page/Hot & Sour Street Soup.jpg" data-diet="veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Traditional Himalayan Thukpa -->
+          <div class="food-card menu-dish-item" data-category="soups" data-diet="non-veg">
+            <span class="chef-badge">Signature</span>
+            <div class="food-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80" alt="Traditional Himalayan Thukpa">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge non-veg" title="Non-Vegetarian"></span>
+                <span class="spice-rating" title="Medium">🌶️🌶️</span>
+              </div>
+              <h3 class="food-card-title">Himalayan Thukpa Bowl</h3>
+              <p class="food-card-desc">Steaming noodle broth with julienned veggies, 2 steamed momos inside, and mountain cumin seasoning.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹140 <small>/ Big Bowl</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Himalayan Thukpa Bowl" data-price="140" data-portion="1 Large Bowl" data-img="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80" data-diet="non-veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Chicken Manchow Soup -->
+          <div class="food-card menu-dish-item" data-category="soups" data-diet="non-veg">
+            <div class="food-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?auto=format&fit=crop&w=500&q=80" alt="Chicken Manchow Soup">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge non-veg" title="Non-Vegetarian"></span>
+                <span class="spice-rating" title="Spicy">🌶️🌶️</span>
+              </div>
+              <h3 class="food-card-title">Chicken Manchow Soup</h3>
+              <p class="food-card-desc">Dark, spicy garlic coriander broth packed with chicken shreds, topped with crunchy fried noodle crisps.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹110 <small>/ Bowl</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Chicken Manchow Soup" data-price="110" data-portion="1 Bowl" data-img="https://images.unsplash.com/photo-1617093727343-374698b1b08d?auto=format&fit=crop&w=500&q=80" data-diet="non-veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Lemon Mint Iced Tea -->
+          <div class="food-card menu-dish-item" data-category="soups" data-diet="veg">
+            <div class="food-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80" alt="Lemon Mint Iced Tea">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge veg" title="Vegetarian"></span>
+                <span class="spice-rating" title="Cooling">❄️ Chill</span>
+              </div>
+              <h3 class="food-card-title">Lemon Mint Iced Tea</h3>
+              <p class="food-card-desc">Slow-brewed Assam black tea infused with freshly squeezed lime juice, garden mint, and organic honey.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹65 <small>/ 350ml</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Lemon Mint Iced Tea" data-price="65" data-portion="350ml" data-img="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80" data-diet="veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Classic Virgin Mojito -->
+          <div class="food-card menu-dish-item" data-category="soups" data-diet="veg">
+            <div class="food-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=500&q=80" alt="Classic Virgin Mojito">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge veg" title="Vegetarian"></span>
+                <span class="spice-rating" title="Cooling">❄️ Chill</span>
+              </div>
+              <h3 class="food-card-title">Classic Virgin Mojito</h3>
+              <p class="food-card-desc">Muddled fresh mint leaves, zesty lemon wedges, cane sugar, and sparkling chilled soda.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹75 <small>/ 350ml</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Classic Virgin Mojito" data-price="75" data-portion="350ml" data-img="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=500&q=80" data-diet="veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Spiced Peach & Ginger Fizz -->
+          <div class="food-card menu-dish-item" data-category="soups" data-diet="veg">
+            <div class="food-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=500&q=80" alt="Spiced Peach & Ginger Fizz">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-top">
+                <span class="diet-badge veg" title="Vegetarian"></span>
+                <span class="spice-rating" title="Tangy">🍑 Fizz</span>
+              </div>
+              <h3 class="food-card-title">Spiced Peach &amp; Ginger Fizz</h3>
+              <p class="food-card-desc">Real peach puree sparkling cooler accented with fresh crushed ginger juice and black salt.</p>
+              <div class="food-card-footer">
+                <div class="food-card-price">₹85 <small>/ 350ml</small></div>
+                <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop add-to-cart-btn" data-name="Spiced Peach & Ginger Fizz" data-price="85" data-portion="350ml" data-img="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=500&q=80" data-diet="veg">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEGMENT 7: CUSTOMIZATION & DIETARY NOTE BOX -->
+      <section class="section-spacing pb-0">
+        <div class="dietary-advisory-box reveal-on-scroll">
+          <div class="text-center mb-4">
+            <span class="section-pill-tag">Food Quality &amp; Hygiene Standards</span>
+            <h3 style="font-size: 1.5rem; color: var(--color-primary-dark);">Customization &amp; Allergen Advisories</h3>
+            <p style="color: var(--color-text-muted); font-size: 0.95rem;">
+              We want your street meal to be completely safe, comfortable, and tailored to your tastes.
+            </p>
+          </div>
+
+          <div class="advisory-grid">
+            <!-- Item 1 -->
+            <div class="advisory-item">
+              <h4><span>🌶️</span> Spice Customization</h4>
+              <p>
+                Every wok bowl and fried momo can be requested in <strong>Mild</strong> (gentle aromatic garlic), <strong>Medium</strong> (authentic street kick), or <strong>Inferno</strong> (ghost pepper glaze).
+              </p>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="advisory-item">
+              <h4><span>🌱</span> Pure Veg Steamers</h4>
+              <p>
+                We use strictly designated separate bamboo steamers, frying woks, and strainers for vegetarian items. No cross-contact with meats is guaranteed.
+              </p>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="advisory-item">
+              <h4><span>⚠️</span> Allergen Transparency</h4>
+              <p>
+                Contains wheat gluten (momos &amp; noodles) and soy. Certain dips contain toasted sesame seeds. Please inform the counter if you have peanut or nut allergies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       GLOBAL FOOTER (ON ALL 4 PAGES)
+       ======================================================================== -->
+  <footer class="site-footer mt-5">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div>
+          <a href="index.html" class="brand-logo-link footer-brand-logo-link" aria-label="Chopsticks Home">
+            <svg class="brand-logo-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="30" fill="#FCF2E5" stroke="#EC5B38" stroke-width="2.5"/>
+              <!-- Steam Wisps -->
+              <path d="M26 19C25 15 28 12 26 9" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+              <path d="M32 17C31 13 34 11 32 8" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+              <path d="M38 19C37 15 40 12 38 9" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+              <!-- Momo -->
+              <path d="M20 36C20 28 25 24 32 24C39 24 44 28 44 36C44 42 38 45 32 45C26 45 20 42 20 36Z" fill="#FFFFFF" stroke="#524646" stroke-width="2"/>
+              <path d="M26 28C28 30 29 32 29 35M32 25V35M38 28C36 30 35 32 35 35" stroke="#A8A492" stroke-width="1.5" stroke-linecap="round"/>
+              <!-- Crossed Chopsticks -->
+              <line x1="12" y1="20" x2="52" y2="48" stroke="#524646" stroke-width="3.5" stroke-linecap="round"/>
+              <line x1="52" y1="20" x2="12" y2="48" stroke="#EC5B38" stroke-width="3.5" stroke-linecap="round"/>
+              <circle cx="32" cy="34" r="2.5" fill="#EC5B38"/>
+            </svg>
+            <div class="brand-text-wrap">
+              <span class="brand-name footer-brand-name">Chopsticks</span>
+              <span class="brand-subtitle">MOMOS &amp; CHINESE</span>
+            </div>
+          </a>
+          <p class="footer-desc mt-2">
+            Authentic street-style momos and high-heat wok Chinese fast eats. Rolled fresh daily with love, spices, and secret sauces.
+          </p>
+          <div class="fssai-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>FSSAI Certified Stall #20824003001842</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Quick Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home 1: Classic Street</a></li>
+            <li><a href="home-2.html">Home 2: Steamed vs Fried</a></li>
+            <li><a href="about.html">About Chopsticks</a></li>
+            <li><a href="menu.html">Full Menu by Category</a></li>
+            <li><a href="combos.html">Combos &amp; Student Deals</a></li>
+            <li><a href="blog.html">Street Food Blog</a></li>
+            <li><a href="contact.html">Order Takeaway</a></li>
+          </ul>
+        </div>
+
+        <!-- Stall Timings Recap -->
+        <div>
+          <h4 class="footer-col-title">Operating Hours</h4>
+          <p class="footer-timings-p">
+            <strong>Monday – Friday:</strong><br>
+            12:00 PM – 11:00 PM
+          </p>
+          <p class="footer-timings-p">
+            <strong>Saturday – Sunday:</strong><br>
+            11:30 AM – 11:30 PM
+          </p>
+          <span style="color: #FFD285; font-size: 0.85rem; font-weight: 600;">⚡ Evening Rush: 5:00 PM – 9:00 PM</span>
+        </div>
+
+        <!-- Location & Socials -->
+        <div>
+          <h4 class="footer-col-title">Find Our Stall</h4>
+          <p class="footer-timings-p">
+            Kiosk #14, Opposite Exit 2, Central Metro Station, Commercial Food Street.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="contact.html#stallMap" class="social-icon-btn" aria-label="Google Maps Location">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 Chopsticks Momos &amp; Chinese Street Food Stall. All rights reserved.</div>
+        <div>Handcrafted with passion for street food lovers &amp; evening snackers.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Core Custom JS -->
+  <script src="main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Stall &amp; Pre-Order Takeaway — Chopsticks Momos</title>
+  <meta name="description" content="Find the Chopsticks momo stall opposite Central Metro Exit 2. Check live stall status, rush hours, submit a quick 10-minute takeaway order, or book bulk catering.">
+
+  <!-- Favicon: Inline SVG with #EC5B38 Circle, Crossed Chopsticks & Momo -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23EC5B38'/%3E%3Cpath d='M16 18 L48 46 M48 18 L16 46' stroke='%23FCF2E5' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M22 34 C22 27 42 27 42 34 C42 43 22 43 22 34 Z' fill='%23FCF2E5' stroke='%23524646' stroke-width='2'/%3E%3Cpath d='M26 24 Q28 19 26 15 M32 23 Q34 18 32 14 M38 24 Q40 19 38 15' stroke='%23FCF2E5' stroke-width='2.5' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Plus Jakarta Sans & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Custom Brand Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       GLOBAL HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main Navigation">
+        <!-- SVG Brand Emblem Logo -->
+        <a href="index.html" class="brand-logo-link" aria-label="Chopsticks Home">
+          <svg class="brand-logo-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="30" fill="#FCF2E5" stroke="#EC5B38" stroke-width="2.5"/>
+            <!-- Steam Wisps -->
+            <path d="M26 19C25 15 28 12 26 9" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+            <path d="M32 17C31 13 34 11 32 8" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+            <path d="M38 19C37 15 40 12 38 9" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+            <!-- Momo -->
+            <path d="M20 36C20 28 25 24 32 24C39 24 44 28 44 36C44 42 38 45 32 45C26 45 20 42 20 36Z" fill="#FFFFFF" stroke="#524646" stroke-width="2"/>
+            <path d="M26 28C28 30 29 32 29 35M32 25V35M38 28C36 30 35 32 35 35" stroke="#A8A492" stroke-width="1.5" stroke-linecap="round"/>
+            <!-- Crossed Chopsticks -->
+            <line x1="12" y1="20" x2="52" y2="48" stroke="#524646" stroke-width="3.5" stroke-linecap="round"/>
+            <line x1="52" y1="20" x2="12" y2="48" stroke="#EC5B38" stroke-width="3.5" stroke-linecap="round"/>
+            <circle cx="32" cy="34" r="2.5" fill="#EC5B38"/>
+          </svg>
+          <div class="brand-text-wrap">
+            <span class="brand-name">Chopsticks</span>
+            <span class="brand-subtitle">MOMOS &amp; CHINESE</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links-desktop">
+          <!-- Home with Dropdown -->
+          <li class="nav-link-item nav-dropdown-wrap">
+            <a href="index.html" class="nav-dropdown-trigger">
+              Home
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <ul class="nav-dropdown-menu">
+              <li>
+                <a href="index.html" class="nav-dropdown-item">
+                  <span class="icon">🏮</span>
+                  <div>
+                    <div>Home 1: Classic Street</div>
+                    <small style="font-size: 0.72rem; color: var(--color-stone-muted);">The Authentic Stall</small>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="home-2.html" class="nav-dropdown-item">
+                  <span class="icon">🥟</span>
+                  <div>
+                    <div>Home 2: Steamed vs Fried</div>
+                    <small style="font-size: 0.72rem; color: var(--color-chilli-accent);">Playful Battle Arena</small>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- About next to Home -->
+          <li class="nav-link-item"><a href="about.html">About</a></li>
+
+          <!-- Menu -->
+          <li class="nav-link-item"><a href="menu.html">Menu</a></li>
+
+          <!-- Combos & Deals -->
+          <li class="nav-link-item"><a href="combos.html">Combos &amp; Deals</a></li>
+
+          <!-- Blog next to Combos -->
+          <li class="nav-link-item"><a href="blog.html">Blog</a></li>
+
+          <!-- Contact & Stall -->
+          <li class="nav-link-item"><a href="contact.html" class="active">Contact &amp; Stall</a></li>
+        </ul>
+
+        <!-- Toggles & CTA Group -->
+        <div class="nav-cta-wrap">
+          <!-- Dark Mode Toggle Button -->
+          <button type="button" class="nav-action-btn theme-toggle-btn" aria-label="Toggle dark mode">
+            <svg class="icon-sun" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <span class="btn-tooltip-badge">Dark Mode</span>
+          </button>
+
+          <!-- RTL Direction Toggle Button -->
+          <button type="button" class="nav-action-btn rtl-toggle-btn" aria-label="Toggle RTL text direction">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
+            <span class="btn-tooltip-badge">Switch RTL</span>
+          </button>
+
+          <!-- Shopping Cart Icon with Badge -->
+          <a href="cart.html" class="nav-action-btn nav-cart-btn" aria-label="View Shopping Cart">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="cart-badge-count">0</span>
+            <span class="btn-tooltip-badge">Cart</span>
+          </a>
+
+          <!-- Quick Takeaway CTA -->
+          <a href="checkout.html" class="btn-chopsticks btn-primary-chilli btn-sm-chop nav-cta-desktop">
+            Checkout
+          </a>
+
+          <!-- Mobile Toggle -->
+          <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+        <!-- Mobile Dropdown Menu -->
+    <div class="mobile-nav-menu" id="mobileNavMenu">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home 1: Classic Street</a></li>
+        <li><a href="home-2.html">Home 2: Steamed vs Fried</a></li>
+        <li><a href="about.html">About Chopsticks</a></li>
+        <li><a href="menu.html">Menu (Momos & Wok)</a></li>
+        <li><a href="combos.html">Combos & Deals</a></li>
+        <li><a href="blog.html">Blog & Stories</a></li>
+        <li><a href="contact.html" class="active">Contact & Stall Map</a></li>
+        <li><a href="cart.html">Cart (<span class="cart-badge-count">0</span>)</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       PAGE 4: CONTACT & ORDER ENQUIRY (7 SEGMENTS)
+       ======================================================================== -->
+  <main>
+    <!-- SEGMENT 1: CONTACT HEADER & OPERATING STATUS (HERO BANNER) -->
+    <section class="page-hero-banner hero-bg-contact text-center">
+      <div class="container">
+        <div class="live-stall-badge mx-auto mb-3" style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(46, 125, 50, 0.25); border: 1px solid rgba(76, 175, 80, 0.5); color: #A5D6A7; padding: 0.45rem 1.1rem; border-radius: var(--radius-full); font-weight: 700; font-size: 0.88rem;">
+          <span class="pulse-indicator"></span>
+          <span>Serving Hot Right Now &bull; Open Until 11:00 PM Tonight</span>
+        </div>
+        <h1 class="hero-title">Stall Location &amp; Order Enquiry</h1>
+        <p class="hero-subtitle">
+          Fast takeaway counter located at Food Street Plaza. Pre-order your hot boxes below to skip the evening queue, or contact us for party platters.
+        </p>
+
+        <!-- Direct Contact Action Bar -->
+        <div class="d-flex justify-content-center gap-3 flex-wrap mt-4">
+          <a href="tel:+919876543210" class="btn-chopsticks" style="background: rgba(255,255,255,0.15); color: #FFF; border: 1px solid rgba(255,255,255,0.35);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call Counter: +91 98765 43210
+          </a>
+          <a href="https://wa.me/919876543210?text=Hi%20Chopsticks,%20I%20would%20like%20to%20place%20a%20takeaway%20order" target="_blank" rel="noopener" class="btn-chopsticks btn-primary-chilli">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container py-4">
+
+      <!-- SEGMENT 2 & 3: FORM & LANDMARK MAP (SPLIT LAYOUT) -->
+      <section class="section-spacing pt-4" id="orderFormSection">
+        <div class="contact-layout-grid">
+          <!-- SEGMENT 2: INTERACTIVE ORDER ENQUIRY FORM -->
+          <div class="enquiry-form-card reveal-on-scroll">
+            <div class="mb-4">
+              <span class="section-pill-tag">Instant Counter Slip</span>
+              <h2 style="font-size: 1.75rem; margin-bottom: 0.5rem;">Pre-Order for Quick Takeaway</h2>
+              <p style="color: var(--color-text-muted); font-size: 0.92rem;">
+                Submit your order 10–15 minutes ahead. We steam it fresh so your takeaway box is ready when you reach the stall!
+              </p>
+            </div>
+
+            <form id="orderEnquiryForm" novalidate>
+              <div class="form-row-2col">
+                <!-- Full Name -->
+                <div class="form-group-chop">
+                  <label for="custName" class="form-label-chop">Full Name (Letters Only) *</label>
+                  <input type="text" id="custName" class="form-input-chop" placeholder="e.g. Rahul Sharma" required pattern="^[A-Za-z\s.'-]+$" minlength="2" maxlength="50" autocomplete="name" title="Please enter letters and characters only (no numbers).">
+                  <div class="form-field-error small text-danger mt-1" id="custNameError" style="display: none;">Please enter letters and characters only (no digits allowed).</div>
+                </div>
+                <!-- Phone Number -->
+                <div class="form-group-chop">
+                  <label for="custPhone" class="form-label-chop">Phone Number (10 Digits Only) *</label>
+                  <input type="tel" id="custPhone" class="form-input-chop" placeholder="e.g. 9876543210" pattern="^[0-9]{10}$" minlength="10" maxlength="10" inputmode="numeric" autocomplete="tel" required title="Please enter exactly 10 digits (numbers only).">
+                  <div class="form-field-error small text-danger mt-1" id="custPhoneError" style="display: none;">Please enter exactly 10 numeric digits.</div>
+                </div>
+              </div>
+
+              <div class="form-row-2col">
+                <!-- Order Type -->
+                <div class="form-group-chop">
+                  <label for="orderType" class="form-label-chop">Order Type *</label>
+                  <select id="orderType" class="form-select-chop" required>
+                    <option value="Takeaway Pickup (10-15 Mins)">Takeaway Pickup (10-15 Mins)</option>
+                    <option value="Bulk Party / Office Order">Bulk Party / Office Order</option>
+                    <option value="General Question / Feedback">General Question / Feedback</option>
+                  </select>
+                </div>
+                <!-- Preferred Pickup Date & Time -->
+                <div class="form-group-chop">
+                  <label for="pickupDateTime" class="form-label-chop">Preferred Pickup Time *</label>
+                  <input type="datetime-local" id="pickupDateTime" class="form-input-chop" required>
+                </div>
+              </div>
+
+              <!-- Item Selection / Dishes Required -->
+              <div class="form-group-chop">
+                <label for="dishesSelected" class="form-label-chop">Dishes &amp; Quantity Required *</label>
+                <input type="text" id="dishesSelected" class="form-input-chop" placeholder="e.g. 1 Classic Chicken Momo, 1 Solo Box 1, 1 Kurkure Paneer" required>
+                <small style="color: var(--color-stone-muted); font-size: 0.8rem; display: block; margin-top: 0.25rem;">
+                  Browse the menu or combos page and enter the dish names here.
+                </small>
+              </div>
+
+              <!-- Special Spice Preference -->
+              <div class="form-group-chop">
+                <label for="spiceLevel" class="form-label-chop">Special Spice Preference *</label>
+                <select id="spiceLevel" class="form-select-chop" required>
+                  <option value="Medium (Standard Street Spice)">Medium (Standard Street Spice 🌶️🌶️)</option>
+                  <option value="Mild (Kid-friendly / Low Spice)">Mild (Kid-friendly / Low Spice 🌶️)</option>
+                  <option value="Inferno Extra Hot (Ghost Pepper Chutney)">Inferno Extra Hot (Ghost Pepper Chutney 🌶️🌶️🌶️)</option>
+                </select>
+              </div>
+
+              <!-- Message / Instructions -->
+              <div class="form-group-chop">
+                <label for="specialInstructions" class="form-label-chop">Special Instructions / Dietary Notes (Optional)</label>
+                <textarea id="specialInstructions" class="form-textarea-chop" rows="3" placeholder="e.g. Extra red chutney cups, pack fork and chopstick, separate pure-veg box."></textarea>
+              </div>
+
+              <button type="submit" class="btn-chopsticks btn-primary-chilli w-100" style="padding: 1rem;">
+                Submit Takeaway Slip &rarr;
+              </button>
+            </form>
+          </div>
+
+          <!-- SEGMENT 3: STALL LOCATION & LANDMARK GUIDE -->
+          <div class="d-flex flex-column gap-4 reveal-on-scroll">
+            <div class="food-card p-0 overflow-hidden" id="stallMap" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-card); border: 1px solid var(--color-border-light);">
+              <div class="p-3 border-bottom d-flex align-items-center justify-content-between" style="background-color: var(--color-surface-white);">
+                <div class="d-flex align-items-center gap-2">
+                  <span style="font-size: 1.5rem;">📍</span>
+                  <div>
+                    <h3 style="font-size: 1.15rem; color: var(--color-primary-dark); margin: 0; font-weight: 800;">Chopsticks Stall Kiosk #14</h3>
+                    <p style="font-size: 0.82rem; color: var(--color-text-muted); margin: 0;">Opposite Exit Gate 2, Central Metro Station Food Walkway</p>
+                  </div>
+                </div>
+                <a href="https://www.google.com/maps/search/?api=1&query=Central+Metro+Station" target="_blank" rel="noopener" class="btn-chopsticks btn-primary-chilli btn-sm-chop text-nowrap">
+                  Get Directions
+                </a>
+              </div>
+              <div style="position: relative; width: 100%; height: 350px;">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.053874312154!2d88.3515000!3d22.5726000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277ab36a44555%3A0x6b7724a2ef693f0!2sCentral%20Metro%20Station!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                  width="100%" 
+                  height="100%" 
+                  style="border:0; display: block;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Chopsticks Stall Live Location Map">
+                </iframe>
+              </div>
+            </div>
+
+            <!-- Direction Guide Card -->
+            <div class="food-card p-4">
+              <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--color-primary-dark);">
+                🚶 Landmark &amp; Walking Guide
+              </h4>
+              <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.9rem; color: var(--color-text-muted);">
+                <li class="d-flex gap-2">
+                  <span style="color: var(--color-chilli-accent); font-weight: 700;">1.</span>
+                  <span>Exit from Central Metro Station <strong>Exit 2</strong>.</span>
+                </li>
+                <li class="d-flex gap-2">
+                  <span style="color: var(--color-chilli-accent); font-weight: 700;">2.</span>
+                  <span>Walk 30 steps towards the pedestrian Food Street lane.</span>
+                </li>
+                <li class="d-flex gap-2">
+                  <span style="color: var(--color-chilli-accent); font-weight: 700;">3.</span>
+                  <span>Look for the warm wooden bamboo steamers and the red <strong>Chopsticks</strong> neon board.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEGMENT 4: STALL TIMINGS & PEAK RUSH HOURS -->
+      <section class="section-spacing pt-0">
+        <div class="section-title-wrap">
+          <div class="section-pill-tag">Daily Schedule</div>
+          <h2 class="section-heading">Stall Timings &amp; Peak Rush Hours</h2>
+          <p class="section-subtitle">
+            Plan your visit smoothly to avoid peak crowds or catch our hottest fresh steamer batches!
+          </p>
+        </div>
+
+        <div class="timing-grid reveal-on-scroll">
+          <div class="timing-card">
+            <h4>🌞 Lunch Hours</h4>
+            <div class="timing-hours">12:00 PM – 3:30 PM</div>
+            <p class="timing-note">Quick office takeaway bowls, steaming thukpa, and lunch combos ready in 5 mins.</p>
+          </div>
+
+          <div class="timing-card" style="border-top-color: #2E7D32;">
+            <h4>🍵 Afternoon Happy Hours</h4>
+            <div class="timing-hours" style="color: #2E7D32;">4:00 PM – 6:30 PM</div>
+            <p class="timing-note">Student snack boxes, relaxed seating by the sidewalk, quick dip sampling.</p>
+          </div>
+
+          <div class="timing-card">
+            <h4>🔥 Evening Peak Rush</h4>
+            <div class="timing-hours">7:00 PM – 9:30 PM</div>
+            <p class="timing-note">High traffic hour! We recommend pre-ordering via the form above to skip lines.</p>
+          </div>
+
+          <div class="timing-card" style="border-top-color: var(--color-primary-dark);">
+            <h4>🌙 Late Night Bites</h4>
+            <div class="timing-hours" style="color: var(--color-primary-dark);">9:30 PM – 11:00 PM</div>
+            <p class="timing-note">Dinner packs, kurkure momos, sizzling midnight noodles until last steamer empties.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEGMENT 5: TAKEAWAY & HYGIENE PROTOCOLS -->
+      <section class="section-spacing pt-0">
+        <div class="section-title-wrap">
+          <div class="section-pill-tag">Zero Compromise</div>
+          <h2 class="section-heading">Takeaway Packaging &amp; Hygiene</h2>
+          <p class="section-subtitle">
+            Street flavor with restaurant-grade sanitization and eco-friendly insulated packaging.
+          </p>
+        </div>
+
+        <div class="hygiene-grid reveal-on-scroll">
+          <div class="hygiene-card">
+            <div class="hygiene-icon">📦</div>
+            <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Thermal Eco Packaging</h4>
+            <p style="font-size: 0.88rem; color: var(--color-text-muted);">
+              Biodegradable kraft paper boxes with steam vents that keep dumplings piping hot without getting soggy.
+            </p>
+          </div>
+
+          <div class="hygiene-card">
+            <div class="hygiene-icon">🔒</div>
+            <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Tamper-Proof Seal</h4>
+            <p style="font-size: 0.88rem; color: var(--color-text-muted);">
+              Every takeaway bag is fastened with our signature branded security seal before handing across the counter.
+            </p>
+          </div>
+
+          <div class="hygiene-card">
+            <div class="hygiene-icon">💧</div>
+            <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem;">100% Filtered RO Water</h4>
+            <p style="font-size: 0.88rem; color: var(--color-text-muted);">
+              All dough kneading, broth boiling, and cooking steam uses multi-stage UV &amp; RO purified water only.
+            </p>
+          </div>
+
+          <div class="hygiene-card">
+            <div class="hygiene-icon">🛡️</div>
+            <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Food Safety &amp; FSSAI</h4>
+            <p style="font-size: 0.88rem; color: var(--color-text-muted);">
+              Rigorous temperature checks, daily oil replacement logs, and certified hygienic kitchen practices.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEGMENT 6: FREQUENTLY ASKED QUESTIONS (ACCORDION) -->
+      <section class="section-spacing pt-0" id="faqs">
+        <div class="section-title-wrap">
+          <div class="section-pill-tag">Got Questions?</div>
+          <h2 class="section-heading">Frequently Asked Questions</h2>
+          <p class="section-subtitle">
+            Everything you need to know about our ingredients, takeaway slips, and stall experience.
+          </p>
+        </div>
+
+        <div class="faq-accordion-list reveal-on-scroll">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button type="button" class="faq-header" aria-expanded="false">
+              <span>How do I pre-order for quick 10-minute takeaway?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-body">
+              <div class="faq-body-content">
+                Simply fill out the Order Enquiry form on this page with your required dishes and arrival time, or tap the WhatsApp button. Our counter chefs place your items in the bamboo steamers 8 minutes before your scheduled arrival so your box is steaming hot and ready when you pull up.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button type="button" class="faq-header" aria-expanded="false">
+              <span>Do you offer pure vegetarian &amp; Jain options?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-body">
+              <div class="faq-body-content">
+                Yes! We maintain completely separate bamboo steamer towers and dedicated frying woks for all vegetarian food. For Jain dietary requirements (no onion, garlic, or root vegetables), please let us know in advance or write it in the special instructions box.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button type="button" class="faq-header" aria-expanded="false">
+              <span>How spicy is your signature red momo chutney?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-body">
+              <div class="faq-body-content">
+                Our red chutney is authentically fiery, slow-simmered with mountain chillies and charred tomatoes. However, we also provide our creamy Sweet Garlic Sesame Dip and comforting Himalayan Clear Herb Broth to balance out the heat according to your palate.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button type="button" class="faq-header" aria-expanded="false">
+              <span>Can we customize momo fillings for bulk party orders?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-body">
+              <div class="faq-body-content">
+                Absolutely. For bulk orders over 50 pieces (birthday parties, corporate gatherings, college fests), you can choose custom assorted ratios of steamed, kothey, and kurkure varieties, adjust chilli seasoning levels, and request squeeze dip bottles for easy catering.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button type="button" class="faq-header" aria-expanded="false">
+              <span>Do you accept digital payments (UPI, Cards)?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-body">
+              <div class="faq-body-content">
+                Yes, we accept all major UPI apps (Google Pay, PhonePe, Paytm), debit/credit cards, and cash right at the counter. For pre-orders, you can pay directly upon pickup.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEGMENT 7: INSTANT WHATSAPP / CALL CONNECT BAR -->
+      <section class="section-spacing pt-0">
+        <div class="visit-banner-box reveal-on-scroll">
+          <div>
+            <div class="stall-timing-pill">
+              <span>⚡</span> 10-Minute Instant Counter Pickup
+            </div>
+            <h2>Running Late? Call the Counter Chef Directly</h2>
+            <p>
+              Heading down from the metro escalator right now? Ring our stall counter or drop a one-line WhatsApp and we will drop your momos into the bamboo steamer immediately!
+            </p>
+            <div class="d-flex align-items-center gap-3 text-white-50 small">
+              <span>✓ Average pickup ready in 8 mins</span>
+              <span>✓ No waiting in street queue</span>
+              <span>✓ Hot &amp; crispy guarantee</span>
+            </div>
+          </div>
+          <div class="visit-banner-actions">
+            <a href="tel:+919876543210" class="btn-chopsticks btn-primary-chilli w-100">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call +91 98765 43210
+            </a>
+            <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="btn-chopsticks btn-outline-dark w-100" style="color: #FFF !important; border-color: rgba(255,255,255,0.4);">
+              Send WhatsApp Message
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       MODAL: ORDER CONFIRMATION
+       ======================================================================== -->
+  <div class="chop-modal-backdrop" id="orderSuccessModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="chop-modal-box">
+      <div class="modal-icon-success">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+      <h3 class="modal-title" id="modalTitle">Order Slip Generated!</h3>
+      <p class="modal-msg">
+        Your pre-order slip has been routed to the Chopsticks stall counter steamer chef.
+      </p>
+
+      <!-- Dynamic Order Summary Inserted Here by main.js -->
+      <div id="modalOrderSummary"></div>
+
+      <button type="button" class="btn-chopsticks btn-primary-chilli w-100" id="modalCloseBtn">
+        Great, I'll Collect at the Stall!
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       GLOBAL FOOTER (ON ALL 4 PAGES)
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div>
+          <a href="index.html" class="brand-logo-link footer-brand-logo-link" aria-label="Chopsticks Home">
+            <svg class="brand-logo-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="30" fill="#FCF2E5" stroke="#EC5B38" stroke-width="2.5"/>
+              <!-- Steam Wisps -->
+              <path d="M26 19C25 15 28 12 26 9" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+              <path d="M32 17C31 13 34 11 32 8" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+              <path d="M38 19C37 15 40 12 38 9" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+              <!-- Momo -->
+              <path d="M20 36C20 28 25 24 32 24C39 24 44 28 44 36C44 42 38 45 32 45C26 45 20 42 20 36Z" fill="#FFFFFF" stroke="#524646" stroke-width="2"/>
+              <path d="M26 28C28 30 29 32 29 35M32 25V35M38 28C36 30 35 32 35 35" stroke="#A8A492" stroke-width="1.5" stroke-linecap="round"/>
+              <!-- Crossed Chopsticks -->
+              <line x1="12" y1="20" x2="52" y2="48" stroke="#524646" stroke-width="3.5" stroke-linecap="round"/>
+              <line x1="52" y1="20" x2="12" y2="48" stroke="#EC5B38" stroke-width="3.5" stroke-linecap="round"/>
+              <circle cx="32" cy="34" r="2.5" fill="#EC5B38"/>
+            </svg>
+            <div class="brand-text-wrap">
+              <span class="brand-name footer-brand-name">Chopsticks</span>
+              <span class="brand-subtitle">MOMOS &amp; CHINESE</span>
+            </div>
+          </a>
+          <p class="footer-desc mt-2">
+            Authentic street-style momos and high-heat wok Chinese fast eats. Rolled fresh daily with love, spices, and secret sauces.
+          </p>
+          <div class="fssai-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>FSSAI Certified Stall #20824003001842</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Quick Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home 1: Classic Street</a></li>
+            <li><a href="home-2.html">Home 2: Steamed vs Fried</a></li>
+            <li><a href="about.html">About Chopsticks</a></li>
+            <li><a href="menu.html">Full Menu by Category</a></li>
+            <li><a href="combos.html">Combos &amp; Student Deals</a></li>
+            <li><a href="blog.html">Street Food Blog</a></li>
+            <li><a href="contact.html">Order Takeaway</a></li>
+          </ul>
+        </div>
+
+        <!-- Stall Timings Recap -->
+        <div>
+          <h4 class="footer-col-title">Operating Hours</h4>
+          <p class="footer-timings-p">
+            <strong>Monday – Friday:</strong><br>
+            12:00 PM – 11:00 PM
+          </p>
+          <p class="footer-timings-p">
+            <strong>Saturday – Sunday:</strong><br>
+            11:30 AM – 11:30 PM
+          </p>
+          <span style="color: #FFD285; font-size: 0.85rem; font-weight: 600;">⚡ Evening Rush: 5:00 PM – 9:00 PM</span>
+        </div>
+
+        <!-- Location & Socials -->
+        <div>
+          <h4 class="footer-col-title">Find Our Stall</h4>
+          <p class="footer-timings-p">
+            Kiosk #14, Opposite Exit 2, Central Metro Station, Commercial Food Street.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="contact.html#stallMap" class="social-icon-btn" aria-label="Google Maps Location">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 Chopsticks Momos &amp; Chinese Street Food Stall. All rights reserved.</div>
+        <div>Handcrafted with passion for street food lovers &amp; evening snackers.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Core Custom JS -->
+  <script src="main.js"></script>
+</body>
+</html>
+

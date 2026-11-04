@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout &amp; Takeaway Pickup — Chopsticks Momos &amp; Chinese Fast Food</title>
+  <meta name="description" content="Confirm your takeaway pickup slip for fresh hand-rolled momos and sizzling wok Chinese eats at Chopsticks Stall.">
+  
+  <!-- Inline SVG Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23EC5B38'/%3E%3Cpath d='M16 18 L48 46 M48 18 L16 46' stroke='%23FCF2E5' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M22 34 C22 27 42 27 42 34 C42 43 22 43 22 34 Z' fill='%23FCF2E5' stroke='%23524646' stroke-width='2'/%3E%3Cpath d='M26 24 Q28 19 26 15 M32 23 Q34 18 32 14 M38 24 Q40 19 38 15' stroke='%23FCF2E5' stroke-width='2.5' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Plus Jakarta Sans & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Custom Brand Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       PERSISTENT HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main Navigation">
+        <!-- SVG Brand Emblem Logo -->
+        <a href="index.html" class="brand-logo-link" aria-label="Chopsticks Home">
+          <svg class="brand-logo-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="30" fill="#FCF2E5" stroke="#EC5B38" stroke-width="2.5"/>
+            <!-- Steam Wisps -->
+            <path d="M26 19C25 15 28 12 26 9" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+            <path d="M32 17C31 13 34 11 32 8" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+            <path d="M38 19C37 15 40 12 38 9" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+            <!-- Momo -->
+            <path d="M20 36C20 28 25 24 32 24C39 24 44 28 44 36C44 42 38 45 32 45C26 45 20 42 20 36Z" fill="#FFFFFF" stroke="#524646" stroke-width="2"/>
+            <path d="M26 28C28 30 29 32 29 35M32 25V35M38 28C36 30 35 32 35 35" stroke="#A8A492" stroke-width="1.5" stroke-linecap="round"/>
+            <!-- Crossed Chopsticks -->
+            <line x1="12" y1="20" x2="52" y2="48" stroke="#524646" stroke-width="3.5" stroke-linecap="round"/>
+            <line x1="52" y1="20" x2="12" y2="48" stroke="#EC5B38" stroke-width="3.5" stroke-linecap="round"/>
+            <circle cx="32" cy="34" r="2.5" fill="#EC5B38"/>
+          </svg>
+          <div class="brand-text-wrap">
+            <span class="brand-name">Chopsticks</span>
+            <span class="brand-subtitle">MOMOS &amp; CHINESE</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links-desktop">
+          <!-- Home with Dropdown -->
+          <li class="nav-link-item nav-dropdown-wrap">
+            <a href="index.html" class="nav-dropdown-trigger">
+              Home
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <ul class="nav-dropdown-menu">
+              <li>
+                <a href="index.html" class="nav-dropdown-item">
+                  <span class="icon">🏮</span>
+                  <div>
+                    <strong>Home 1: Classic Street</strong>
+                    <small>Signature menu, house dips &amp; street vibes</small>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="home-2.html" class="nav-dropdown-item">
+                  <span class="icon">⚔️</span>
+                  <div>
+                    <strong>Home 2: Steamed vs Fried</strong>
+                    <small>Interactive battle arena &amp; momo roulette</small>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- About next to Home -->
+          <li class="nav-link-item"><a href="about.html">About</a></li>
+
+          <!-- Menu & Combos -->
+          <li class="nav-link-item"><a href="menu.html">Menu</a></li>
+          <li class="nav-link-item"><a href="combos.html">Combos &amp; Deals</a></li>
+
+          <!-- Blog next to Combos -->
+          <li class="nav-link-item"><a href="blog.html">Blog</a></li>
+
+          <!-- Contact & Stall -->
+          <li class="nav-link-item"><a href="contact.html">Contact &amp; Stall</a></li>
+        </ul>
+
+        <!-- Toggles & CTA Group -->
+        <div class="nav-cta-wrap">
+          <!-- Dark Mode Toggle Button -->
+          <button type="button" class="nav-action-btn theme-toggle-btn" aria-label="Toggle dark mode">
+            <svg class="icon-sun" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <span class="btn-tooltip-badge">Dark Mode</span>
+          </button>
+
+          <!-- RTL Direction Toggle Button -->
+          <button type="button" class="nav-action-btn rtl-toggle-btn" aria-label="Toggle RTL text direction">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
+            <span class="btn-tooltip-badge">Switch RTL</span>
+          </button>
+
+          <!-- Shopping Cart Icon with Badge -->
+          <a href="cart.html" class="nav-action-btn nav-cart-btn" aria-label="View Shopping Cart">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="cart-badge-count">0</span>
+            <span class="btn-tooltip-badge">Cart</span>
+          </a>
+
+          <!-- Quick Takeaway CTA -->
+          <a href="checkout.html" class="btn-chopsticks btn-primary-chilli btn-sm-chop nav-cta-desktop active">
+            Checkout
+          </a>
+
+          <!-- Mobile Toggle -->
+          <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+        <!-- Mobile Dropdown Menu -->
+    <div class="mobile-nav-menu" id="mobileNavMenu">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home 1: Classic Street</a></li>
+        <li><a href="home-2.html">Home 2: Steamed vs Fried</a></li>
+        <li><a href="about.html">About Chopsticks</a></li>
+        <li><a href="menu.html">Menu (Momos & Wok)</a></li>
+        <li><a href="combos.html">Combos & Deals</a></li>
+        <li><a href="blog.html">Blog & Stories</a></li>
+        <li><a href="contact.html">Contact & Stall Map</a></li>
+        <li><a href="cart.html">Cart (<span class="cart-badge-count">0</span>)</a></li>
+        <li><a href="checkout.html" class="active">Checkout</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       CHECKOUT PAGE CONTENT
+       ======================================================================== -->
+  <main>
+    <!-- HERO BANNER -->
+    <section class="page-hero-banner hero-bg-checkout text-center">
+      <div class="container">
+        <div class="hero-pill">
+          <span>⚡</span> Express Takeaway Counter
+        </div>
+        <h1 class="hero-title">Checkout &amp; Pickup Confirmation</h1>
+        <p class="hero-subtitle">
+          Confirm your contact details and desired ready time. Your food will be steamed fresh so it's piping hot when you reach Stall Kiosk #14!
+        </p>
+      </div>
+    </section>
+
+    <div class="container py-5">
+      <form id="checkoutOrderForm" novalidate>
+        <div class="checkout-layout-grid">
+          <!-- Left Column: Pickup Details & Payment Options -->
+          <div class="checkout-form-box">
+            <h2 style="font-size: 1.45rem; font-weight: 800; color: var(--color-primary-dark); margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--color-border-light);">
+              1. Customer &amp; Pickup Details
+            </h2>
+
+            <!-- Name and Phone Row -->
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label for="orderCustName" class="form-label-chop">Full Name (Letters Only) *</label>
+                <input type="text" id="orderCustName" class="form-input-chop" placeholder="e.g. Aditi Roy" required pattern="^[A-Za-z\s.'-]+$" minlength="2" maxlength="50" autocomplete="name" title="Please enter letters and characters only (no numbers).">
+                <div class="form-field-error small text-danger mt-1" id="orderCustNameError" style="display: none;">Please enter letters only (no numbers allowed).</div>
+              </div>
+              <div class="col-md-6">
+                <label for="orderCustPhone" class="form-label-chop">Mobile Number (10 Digits Only) *</label>
+                <input type="tel" id="orderCustPhone" class="form-input-chop" placeholder="e.g. 9876543210" pattern="^[0-9]{10}$" minlength="10" maxlength="10" inputmode="numeric" autocomplete="tel" required title="Please enter exactly 10 digits (numbers only).">
+                <div class="form-field-error small text-danger mt-1" id="orderCustPhoneError" style="display: none;">Please enter exactly 10 numeric digits.</div>
+              </div>
+            </div>
+
+            <!-- Order Type Selection -->
+            <div class="mb-4">
+              <label class="form-label-chop">Dining Style / Fulfillment</label>
+              <div class="row g-2">
+                <div class="col-sm-6">
+                  <label class="payment-option-label active">
+                    <input type="radio" name="pickupType" value="Takeaway Pickup (Thermal Box)" checked style="accent-color: var(--color-chilli-accent);">
+                    <div>
+                      <strong style="display: block; font-size: 0.95rem;">Takeaway Hot Box</strong>
+                      <small class="text-muted">Sealed eco-friendly packaging</small>
+                    </div>
+                  </label>
+                </div>
+                <div class="col-sm-6">
+                  <label class="payment-option-label">
+                    <input type="radio" name="pickupType" value="Stall Dine-In (Counter Plate)" style="accent-color: var(--color-chilli-accent);">
+                    <div>
+                      <strong style="display: block; font-size: 0.95rem;">Eat at Stall Counter</strong>
+                      <small class="text-muted">Served fresh in bamboo steamer</small>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ready / Pickup Time -->
+            <div class="mb-4">
+              <label for="orderPickupTime" class="form-label-chop">Preferred Ready / Collection Time</label>
+              <select id="orderPickupTime" class="form-input-chop" style="cursor: pointer;">
+                <option value="⚡ ASAP (Ready in 10–12 Minutes)" selected>⚡ ASAP (Ready in 10–12 Minutes)</option>
+                <option value="In 20–25 Minutes">In 20–25 Minutes</option>
+                <option value="In 45 Minutes">In 45 Minutes</option>
+                <option value="Evening Rush (5:30 PM – 6:00 PM)">Evening Rush (5:30 PM – 6:00 PM)</option>
+                <option value="Night Snack (8:00 PM – 8:30 PM)">Night Snack (8:00 PM – 8:30 PM)</option>
+                <option value="Late Night (9:30 PM – 10:30 PM)">Late Night (9:30 PM – 10:30 PM)</option>
+              </select>
+              <small class="text-muted d-block mt-1">Our chefs start pinching and steaming 8 minutes before your chosen time.</small>
+            </div>
+
+            <!-- Kitchen Notes -->
+            <div class="mb-4">
+              <label for="orderNotes" class="form-label-chop">Customizations / Cooking Notes (Optional)</label>
+              <textarea id="orderNotes" class="form-input-chop" rows="3" placeholder="e.g. Extra spicy red chutney, pack dips separately, lighter soya in noodles..."></textarea>
+            </div>
+
+            <!-- Payment Preferences -->
+            <h2 style="font-size: 1.45rem; font-weight: 800; color: var(--color-primary-dark); margin-top: 2rem; margin-bottom: 1.25rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--color-border-light);">
+              2. Payment Preference (Pay at Stall)
+            </h2>
+
+            <div class="payment-options-grid">
+              <label class="payment-option-label active">
+                <input type="radio" name="paymentMethod" value="UPI QR Code (GPay / PhonePe / Paytm)" checked style="accent-color: var(--color-chilli-accent);">
+                <div>
+                  <strong style="display: block; font-size: 0.95rem;">UPI QR / GPay / Paytm</strong>
+                  <small class="text-muted">Scan QR at counter</small>
+                </div>
+              </label>
+
+              <label class="payment-option-label">
+                <input type="radio" name="paymentMethod" value="Cash on Counter Collection" style="accent-color: var(--color-chilli-accent);">
+                <div>
+                  <strong style="display: block; font-size: 0.95rem;">Cash on Pickup</strong>
+                  <small class="text-muted">Exact change appreciated</small>
+                </div>
+              </label>
+            </div>
+            <small class="text-muted d-block mt-2">🔒 No advance online payment required. Pay conveniently at the counter when collecting your hot box.</small>
+          </div>
+
+          <!-- Right Column: Live Order Receipt & Submit -->
+          <div>
+            <div class="cart-summary-card">
+              <div class="d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom">
+                <h3 style="font-size: 1.25rem; margin-bottom: 0; font-weight: 800;">Order Receipt</h3>
+                <a href="cart.html" class="small text-muted" style="text-decoration: underline;">Edit Cart</a>
+              </div>
+
+              <!-- List of items in cart -->
+              <div id="checkoutItemsSummary" class="mb-3"></div>
+
+              <!-- Breakdown -->
+              <div class="cart-summary-line">
+                <span>Items Subtotal</span>
+                <span id="checkoutSubtotal" style="font-weight: 700;">₹0</span>
+              </div>
+
+              <div class="cart-summary-line">
+                <span>Thermal Packaging</span>
+                <span id="checkoutPackaging" style="font-weight: 700;">₹15</span>
+              </div>
+
+              <div class="cart-summary-line" id="checkoutDiscountRow" style="display: none; color: #4CAF50;">
+                <span>Coupon Savings</span>
+                <span id="checkoutDiscount" style="font-weight: 700;">-₹0</span>
+              </div>
+
+              <div class="cart-summary-line total-line">
+                <span>Total Amount</span>
+                <span id="checkoutGrandTotal" style="color: var(--color-chilli-accent);">₹0</span>
+              </div>
+
+              <!-- Place Order Button -->
+              <button type="submit" class="btn-chopsticks btn-primary-chilli w-100 py-3 mt-3" id="placeOrderBtn">
+                Confirm &amp; Place Takeaway Order &rarr;
+              </button>
+
+              <div class="text-center mt-3">
+                <small class="text-muted">
+                  📍 Pickup at Kiosk #14, Opposite Metro Exit 2
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       MODAL: ORDER CONFIRMATION SLIP
+       ======================================================================== -->
+  <div class="chop-modal-backdrop" id="checkoutSuccessModal" role="dialog" aria-modal="true" aria-labelledby="checkoutModalTitle">
+    <div class="chop-modal-box">
+      <div class="modal-icon-success">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+      <h3 class="modal-title" id="checkoutModalTitle">Takeaway Order Confirmed!</h3>
+      <p class="modal-msg">
+        The counter steamer chef has received your order ticket.
+      </p>
+
+      <!-- Dynamic Order Summary with Token & WhatsApp Share Button -->
+      <div id="checkoutModalSummary"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       GLOBAL FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div>
+          <a href="index.html" class="brand-logo-link footer-brand-logo-link" aria-label="Chopsticks Home">
+            <svg class="brand-logo-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="30" fill="#FCF2E5" stroke="#EC5B38" stroke-width="2.5"/>
+              <!-- Steam Wisps -->
+              <path d="M26 19C25 15 28 12 26 9" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+              <path d="M32 17C31 13 34 11 32 8" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+              <path d="M38 19C37 15 40 12 38 9" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+              <!-- Momo -->
+              <path d="M20 36C20 28 25 24 32 24C39 24 44 28 44 36C44 42 38 45 32 45C26 45 20 42 20 36Z" fill="#FFFFFF" stroke="#524646" stroke-width="2"/>
+              <path d="M26 28C28 30 29 32 29 35M32 25V35M38 28C36 30 35 32 35 35" stroke="#A8A492" stroke-width="1.5" stroke-linecap="round"/>
+              <!-- Crossed Chopsticks -->
+              <line x1="12" y1="20" x2="52" y2="48" stroke="#524646" stroke-width="3.5" stroke-linecap="round"/>
+              <line x1="52" y1="20" x2="12" y2="48" stroke="#EC5B38" stroke-width="3.5" stroke-linecap="round"/>
+              <circle cx="32" cy="34" r="2.5" fill="#EC5B38"/>
+            </svg>
+            <div class="brand-text-wrap">
+              <span class="brand-name footer-brand-name">Chopsticks</span>
+              <span class="brand-subtitle">MOMOS &amp; CHINESE</span>
+            </div>
+          </a>
+          <p class="footer-desc mt-2">
+            Authentic street-style momos and high-heat wok Chinese fast eats. Rolled fresh daily with love, spices, and secret sauces.
+          </p>
+          <div class="fssai-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>FSSAI Certified Stall #20824003001842</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Quick Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home 1: Classic Street</a></li>
+            <li><a href="home-2.html">Home 2: Steamed vs Fried</a></li>
+            <li><a href="about.html">About Chopsticks</a></li>
+            <li><a href="menu.html">Full Menu by Category</a></li>
+            <li><a href="combos.html">Combos &amp; Student Deals</a></li>
+            <li><a href="blog.html">Street Food Blog</a></li>
+            <li><a href="contact.html">Order Takeaway</a></li>
+          </ul>
+        </div>
+
+        <!-- Stall Timings Recap -->
+        <div>
+          <h4 class="footer-col-title">Operating Hours</h4>
+          <p class="footer-timings-p">
+            <strong>Monday – Friday:</strong><br>
+            12:00 PM – 11:00 PM
+          </p>
+          <p class="footer-timings-p">
+            <strong>Saturday – Sunday:</strong><br>
+            11:30 AM – 11:30 PM
+          </p>
+          <span style="color: #FFD285; font-size: 0.85rem; font-weight: 600;">⚡ Evening Rush: 5:00 PM – 9:00 PM</span>
+        </div>
+
+        <!-- Location & Socials -->
+        <div>
+          <h4 class="footer-col-title">Find Our Stall</h4>
+          <p class="footer-timings-p">
+            Kiosk #14, Opposite Exit 2, Central Metro Station, Commercial Food Street.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="contact.html#stallMap" class="social-icon-btn" aria-label="Google Maps Location">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 Chopsticks Momos &amp; Chinese Street Food Stall. All rights reserved.</div>
+        <div>Handcrafted with passion for street food lovers &amp; evening snackers.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Core Custom JS -->
+  <script src="main.js"></script>
+</body>
+</html>
+

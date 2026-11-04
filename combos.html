@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Value Combos &amp; Sharing Platters — Chopsticks | Bigger Bites, Bigger Savings</title>
+  <meta name="description" content="Chopsticks value combos: Solo meal boxes starting at ₹149, Duo Platters, the 24-piece Master Momos Platter, and 4 PM - 7 PM student special discounts.">
+
+  <!-- Favicon: Inline SVG with #EC5B38 Circle, Crossed Chopsticks & Momo -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23EC5B38'/%3E%3Cpath d='M16 18 L48 46 M48 18 L16 46' stroke='%23FCF2E5' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M22 34 C22 27 42 27 42 34 C42 43 22 43 22 34 Z' fill='%23FCF2E5' stroke='%23524646' stroke-width='2'/%3E%3Cpath d='M26 24 Q28 19 26 15 M32 23 Q34 18 32 14 M38 24 Q40 19 38 15' stroke='%23FCF2E5' stroke-width='2.5' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Plus Jakarta Sans & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Custom Brand Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       GLOBAL HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main Navigation">
+        <!-- SVG Brand Emblem Logo -->
+        <a href="index.html" class="brand-logo-link" aria-label="Chopsticks Home">
+          <svg class="brand-logo-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="30" fill="#FCF2E5" stroke="#EC5B38" stroke-width="2.5"/>
+            <!-- Steam Wisps -->
+            <path d="M26 19C25 15 28 12 26 9" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+            <path d="M32 17C31 13 34 11 32 8" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+            <path d="M38 19C37 15 40 12 38 9" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+            <!-- Momo -->
+            <path d="M20 36C20 28 25 24 32 24C39 24 44 28 44 36C44 42 38 45 32 45C26 45 20 42 20 36Z" fill="#FFFFFF" stroke="#524646" stroke-width="2"/>
+            <path d="M26 28C28 30 29 32 29 35M32 25V35M38 28C36 30 35 32 35 35" stroke="#A8A492" stroke-width="1.5" stroke-linecap="round"/>
+            <!-- Crossed Chopsticks -->
+            <line x1="12" y1="20" x2="52" y2="48" stroke="#524646" stroke-width="3.5" stroke-linecap="round"/>
+            <line x1="52" y1="20" x2="12" y2="48" stroke="#EC5B38" stroke-width="3.5" stroke-linecap="round"/>
+            <circle cx="32" cy="34" r="2.5" fill="#EC5B38"/>
+          </svg>
+          <div class="brand-text-wrap">
+            <span class="brand-name">Chopsticks</span>
+            <span class="brand-subtitle">MOMOS &amp; CHINESE</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links-desktop">
+          <!-- Home with Dropdown -->
+          <li class="nav-link-item nav-dropdown-wrap">
+            <a href="index.html" class="nav-dropdown-trigger">
+              Home
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <ul class="nav-dropdown-menu">
+              <li>
+                <a href="index.html" class="nav-dropdown-item">
+                  <span class="icon">🏮</span>
+                  <div>
+                    <div>Home 1: Classic Street</div>
+                    <small style="font-size: 0.72rem; color: var(--color-stone-muted);">The Authentic Stall</small>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="home-2.html" class="nav-dropdown-item">
+                  <span class="icon">🥟</span>
+                  <div>
+                    <div>Home 2: Steamed vs Fried</div>
+                    <small style="font-size: 0.72rem; color: var(--color-chilli-accent);">Playful Battle Arena</small>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- About next to Home -->
+          <li class="nav-link-item"><a href="about.html">About</a></li>
+
+          <!-- Menu -->
+          <li class="nav-link-item"><a href="menu.html">Menu</a></li>
+
+          <!-- Combos & Deals -->
+          <li class="nav-link-item"><a href="combos.html" class="active">Combos &amp; Deals</a></li>
+
+          <!-- Blog next to Combos -->
+          <li class="nav-link-item"><a href="blog.html">Blog</a></li>
+
+          <!-- Contact & Stall -->
+          <li class="nav-link-item"><a href="contact.html">Contact &amp; Stall</a></li>
+        </ul>
+
+        <!-- Toggles & CTA Group -->
+        <div class="nav-cta-wrap">
+          <!-- Dark Mode Toggle Button -->
+          <button type="button" class="nav-action-btn theme-toggle-btn" aria-label="Toggle dark mode">
+            <svg class="icon-sun" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <span class="btn-tooltip-badge">Dark Mode</span>
+          </button>
+
+          <!-- RTL Direction Toggle Button -->
+          <button type="button" class="nav-action-btn rtl-toggle-btn" aria-label="Toggle RTL text direction">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
+            <span class="btn-tooltip-badge">Switch RTL</span>
+          </button>
+
+          <!-- Shopping Cart Icon with Badge -->
+          <a href="cart.html" class="nav-action-btn nav-cart-btn" aria-label="View Shopping Cart">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="cart-badge-count">0</span>
+            <span class="btn-tooltip-badge">Cart</span>
+          </a>
+
+          <!-- Quick Takeaway CTA -->
+          <a href="checkout.html" class="btn-chopsticks btn-primary-chilli btn-sm-chop nav-cta-desktop">
+            Checkout
+          </a>
+
+          <!-- Mobile Toggle -->
+          <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+        <!-- Mobile Dropdown Menu -->
+    <div class="mobile-nav-menu" id="mobileNavMenu">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home 1: Classic Street</a></li>
+        <li><a href="home-2.html">Home 2: Steamed vs Fried</a></li>
+        <li><a href="about.html">About Chopsticks</a></li>
+        <li><a href="menu.html">Menu (Momos & Wok)</a></li>
+        <li><a href="combos.html" class="active">Combos & Deals</a></li>
+        <li><a href="blog.html">Blog & Stories</a></li>
+        <li><a href="contact.html">Contact & Stall Map</a></li>
+        <li><a href="cart.html">Cart (<span class="cart-badge-count">0</span>)</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       PAGE 3: COMBO DEALS (7 SEGMENTS)
+       ======================================================================== -->
+  <main>
+    <!-- SEGMENT 1: DEALS HERO BANNER -->
+    <section class="page-hero-banner hero-bg-combos text-center">
+      <div class="container">
+        <div class="hero-pill">
+          <span>🏷️</span> Combos Starting From ₹149
+        </div>
+        <h1 class="hero-title">Bigger Bites, Bigger Savings</h1>
+        <p class="hero-subtitle">
+          Enjoy your favorite street momos, wok noodles, piping hot broths, and chilled drinks bundled together. Save up to 35% compared to individual counter prices!
+        </p>
+      </div>
+    </section>
+
+    <!-- SEGMENT 2: STICKY COMBO NAVIGATION BAR -->
+    <div class="sticky-filter-wrapper">
+      <div class="container">
+        <div class="filter-pills-scroll justify-content-center" role="navigation">
+          <a href="#soloCombos" class="filter-pill-btn active">🍱 Solo Boxes</a>
+          <a href="#duoPlatters" class="filter-pill-btn">🥢 Duo Platters</a>
+          <a href="#partyPlatter" class="filter-pill-btn">👑 24-Piece Master Platter</a>
+          <a href="#studentOffers" class="filter-pill-btn">🎓 Student Deals</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+
+      <!-- SEGMENT 2: SOLO QUICK-BITE COMBOS (INDIVIDUAL MEALS) -->
+      <section class="section-spacing pt-4" id="soloCombos">
+        <div class="section-title-wrap">
+          <div class="section-pill-tag">Single Meal Boxes</div>
+          <h2 class="section-heading">Solo Quick-Bite Combos</h2>
+          <p class="section-subtitle">
+            Engineered for solo appetite: hot dumplings, hearty carbs, and a chilled beverage in one neat takeaway box.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Solo Box 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="combo-card reveal-on-scroll">
+              <span class="combo-savings-ribbon">Save ₹56</span>
+              <div class="food-card-img-wrap" style="aspect-ratio: 16 / 10;">
+                <img src="assets/images/combo/Solo Box 1.jpg" alt="Solo Box 1 - Momos and Noodles">
+              </div>
+              <div class="combo-card-content">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="food-card-title mb-0">Solo Box 1: Steamed &amp; Wok</h3>
+                  <span class="diet-badge veg" title="Veg Option Available"></span>
+                </div>
+                <p class="text-muted small mt-1 mb-2">The ultimate balanced quick bite box.</p>
+                <ul class="combo-items-breakdown">
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    5 Pcs Steamed Momos (Veg or Chicken)
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    Mini Hakka Street Noodles Box
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    Chilled Lemon Mint Iced Tea
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    Complimentary Fiery Red Chutney
+                  </li>
+                </ul>
+                <div class="combo-price-row">
+                  <span class="combo-new-price">₹189</span>
+                  <span class="combo-old-price">₹245</span>
+                  <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop ms-auto" onclick="quickEnquireItem('Solo Box 1: Steamed & Wok')">Order Combo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Solo Box 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="combo-card reveal-on-scroll">
+              <span class="combo-savings-ribbon">Save ₹61</span>
+              <div class="food-card-img-wrap" style="aspect-ratio: 16 / 10;">
+                <img src="assets/images/combo/Solo Box 2.jpg" alt="Solo Box 2 - Fried Momos and Soup">
+              </div>
+              <div class="combo-card-content">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="food-card-title mb-0">Solo Box 2: Crunch &amp; Broth</h3>
+                  <span class="diet-badge non-veg" title="Non-Veg Option Available"></span>
+                </div>
+                <p class="text-muted small mt-1 mb-2">Crispy fried dumplings with warm soup.</p>
+                <ul class="combo-items-breakdown">
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    5 Pcs Crispy Fried Momos
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    Clear Vegetable Thukpa Broth
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    Sweet Garlic Sesame Dip
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    Freshly Pickled Mountain Kimchi
+                  </li>
+                </ul>
+                <div class="combo-price-row">
+                  <span class="combo-new-price">₹199</span>
+                  <span class="combo-old-price">₹260</span>
+                  <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop ms-auto" onclick="quickEnquireItem('Solo Box 2: Crunch & Broth')">Order Combo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Solo Box 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="combo-card reveal-on-scroll">
+              <span class="combo-savings-ribbon">Save ₹71</span>
+              <div class="food-card-img-wrap" style="aspect-ratio: 16 / 10;">
+                <img src="assets/images/combo/Solo Box 3.jpg" alt="Solo Box 3 - Chilli Bowl & Momos">
+              </div>
+              <div class="combo-card-content">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="food-card-title mb-0">Solo Box 3: Dragon Bowl Feast</h3>
+                  <span class="diet-badge non-veg" title="Available in Paneer or Chicken"></span>
+                </div>
+                <p class="text-muted small mt-1 mb-2">Hearty street main with dumpling bites.</p>
+                <ul class="combo-items-breakdown">
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    Chilli Chicken OR Chilli Paneer Rice Bowl
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    3 Pcs Steamed Himalayan Momos
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    Chilled Virgin Mojito (250ml)
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    House Fried Noodle Crunch Cup
+                  </li>
+                </ul>
+                <div class="combo-price-row">
+                  <span class="combo-new-price">₹219</span>
+                  <span class="combo-old-price">₹290</span>
+                  <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop ms-auto" onclick="quickEnquireItem('Solo Box 3: Dragon Bowl Feast')">Order Combo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEGMENT 3: DUO & COUPLE SHARING PLATTERS -->
+      <section class="section-spacing" id="duoPlatters">
+        <div class="section-title-wrap">
+          <div class="section-pill-tag">Built For Two</div>
+          <h2 class="section-heading">Duo &amp; Sharing Platters</h2>
+          <p class="section-subtitle">
+            Going for a street food evening with your best mate or partner? Double the portions, double the dips.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Platter 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="combo-card reveal-on-scroll">
+              <span class="combo-savings-ribbon">23% OFF</span>
+              <div class="food-card-img-wrap" style="aspect-ratio: 16 / 10;">
+                <img src="assets/images/combo/The Momo Duo Platter.jpg" alt="The Momo Duo Platter">
+              </div>
+              <div class="combo-card-content">
+                <h3 class="food-card-title">The Momo Duo Platter</h3>
+                <p class="text-muted small">12 Momos split evenly between steam &amp; crisp.</p>
+                <ul class="combo-items-breakdown">
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>6 Pcs Steamed Classics (Veg or Chicken)</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>6 Pcs Crispy Fried Momos</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>2 Lemon Mint Iced Teas</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Double Fiery Chutney &amp; Sweet Sesame Dips</li>
+                </ul>
+                <div class="combo-price-row">
+                  <span class="combo-new-price">₹299</span>
+                  <span class="combo-old-price">₹390</span>
+                  <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop ms-auto" onclick="quickEnquireItem('The Momo Duo Platter')">Order Platter</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Platter 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="combo-card reveal-on-scroll">
+              <span class="combo-savings-ribbon">24% OFF</span>
+              <div class="food-card-img-wrap" style="aspect-ratio: 16 / 10;">
+                <img src="assets/images/combo/Wok & Roll Platter.jpg" alt="Wok and Roll Platter">
+              </div>
+              <div class="combo-card-content">
+                <h3 class="food-card-title">Wok &amp; Roll Platter</h3>
+                <p class="text-muted small">Loaded street noodles with juicy starters.</p>
+                <ul class="combo-items-breakdown">
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>1 Large Hakka Wok Noodles Box</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>1 Veg or Chicken Manchurian Gravy Tub</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>6 Pcs Steamed Momos</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>2 Earthen Cups of Clear Coriander Broth</li>
+                </ul>
+                <div class="combo-price-row">
+                  <span class="combo-new-price">₹349</span>
+                  <span class="combo-old-price">₹460</span>
+                  <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop ms-auto" onclick="quickEnquireItem('Wok & Roll Platter')">Order Platter</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Platter 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="combo-card reveal-on-scroll">
+              <span class="combo-savings-ribbon">26% OFF</span>
+              <div class="food-card-img-wrap" style="aspect-ratio: 16 / 10;">
+                <img src="assets/images/combo/Dragon Feast Platter.jpg" alt="Dragon Feast Platter">
+              </div>
+              <div class="combo-card-content">
+                <h3 class="food-card-title">Dragon Feast Platter</h3>
+                <p class="text-muted small">Pan-fried kothey with fiery wok rice.</p>
+                <ul class="combo-items-breakdown">
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>8 Pcs Pan-Fried Kothey Potstickers</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>1 Large Schezwan Garlic Fried Rice</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>2 Spiced Peach &amp; Ginger Fizzes</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Smoked Chilli Crisp Oil Dip</li>
+                </ul>
+                <div class="combo-price-row">
+                  <span class="combo-new-price">₹379</span>
+                  <span class="combo-old-price">₹510</span>
+                  <button type="button" class="btn-chopsticks btn-primary-chilli btn-sm-chop ms-auto" onclick="quickEnquireItem('Dragon Feast Platter')">Order Platter</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEGMENT 4: THE ULTIMATE PARTY / FRIENDS PLATTER (HERO DEAL CARD) -->
+      <section class="section-spacing pt-0" id="partyPlatter">
+        <div class="party-master-card reveal-on-scroll">
+          <span class="party-badge-floating">👑 Crowd Favorite Platter</span>
+          <div>
+            <div class="section-pill-tag">Serves 4 to 5 Foodies</div>
+            <h2 style="font-size: clamp(1.8rem, 3.2vw, 2.5rem); margin-bottom: 1rem;">
+              The 24-Piece Master Platter
+            </h2>
+            <p style="color: var(--color-text-muted); font-size: 1.05rem; line-height: 1.6; margin-bottom: 1.5rem;">
+              Can't decide? Have them all! A grand carnival platter packed with every texture we craft:
+            </p>
+            <ul class="combo-items-breakdown mb-4">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><strong>6 Steamed Classics</strong> (Thin-skin juicy melt)</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><strong>6 Golden Crispy Fried</strong> (Blistered crunch)</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><strong>6 Pan-Fried Kothey</strong> (Dark seared bottoms)</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><strong>6 Kurkure Cornflake Crunch</strong> (Extreme crunch)</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><strong>All 4 Signature Dips:</strong> Ghost Pepper, Sweet Sesame, Herb Broth, &amp; Smoked Crisp</li>
+            </ul>
+            <div class="d-flex align-items-baseline gap-3 mb-4">
+              <span style="font-size: 2.2rem; font-weight: 800; color: var(--color-chilli-accent);">₹549</span>
+              <span style="font-size: 1.25rem; color: var(--color-stone-muted); text-decoration: line-through;">₹780</span>
+              <span class="save-pill">Flat 30% Off</span>
+            </div>
+            <button type="button" class="btn-chopsticks btn-primary-chilli" onclick="quickEnquireItem('24-Piece Master Platter')">
+              Order Master Platter Now
+            </button>
+          </div>
+
+          <div style="position: relative;">
+            <img src="assets/images/combo/Serves 4 to 5 Foodies.jpg" alt="24-Piece Master Platter" style="border-radius: var(--radius-md); box-shadow: var(--shadow-card); width: 100%;">
+          </div>
+        </div>
+      </section>
+
+      <!-- SEGMENT 5: STUDENT SPECIAL & HAPPY HOURS BOX -->
+      <section class="section-spacing" id="studentOffers">
+        <div class="section-title-wrap">
+          <div class="section-pill-tag">Daily 4:00 PM – 7:00 PM</div>
+          <h2 class="section-heading">Student Special &amp; Happy Hour Boxes</h2>
+          <p class="section-subtitle">
+            Because post-class cravings hit the hardest. Flash your college ID at the stall counter or enter your student coupon during enquiry.
+          </p>
+        </div>
+
+        <div class="row g-4 reveal-on-scroll">
+          <!-- Student Card 1 -->
+          <div class="col-md-6">
+            <div class="food-card p-4 d-flex flex-column h-100" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFFDF7 100%); border-top: 4px solid var(--color-chilli-accent);">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge" style="background-color: var(--color-accent-soft); color: var(--color-chilli-accent); font-size: 0.85rem; padding: 0.35rem 0.75rem; border-radius: var(--radius-full);">Under ₹100</span>
+                <span class="fw-bold text-muted" style="font-size: 0.85rem;">4:00 PM – 7:00 PM Only</span>
+              </div>
+              <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">After-Class Momo Crave Box</h3>
+              <p style="color: var(--color-text-muted); font-size: 0.92rem; margin-bottom: 1rem;">
+                4 Pcs Fresh Steamed Dumplings + 2 Crispy Veg Spring Rolls + Fiery Dip Cup. Perfect pocket-friendly evening fuel.
+              </p>
+              <div class="mt-auto d-flex align-items-center justify-content-between pt-3 border-top">
+                <span style="font-size: 1.5rem; font-weight: 800; color: var(--color-primary-dark);">₹99 Only</span>
+                <button type="button" class="btn-chopsticks btn-outline-chilli btn-sm-chop" onclick="quickEnquireItem('After-Class Momo Crave Box (₹99)')">Claim Deal</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Student Card 2 -->
+          <div class="col-md-6">
+            <div class="food-card p-4 d-flex flex-column h-100" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFFDF7 100%); border-top: 4px solid var(--color-primary-dark);">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge" style="background-color: rgba(82, 70, 70, 0.1); color: var(--color-primary-dark); font-size: 0.85rem; padding: 0.35rem 0.75rem; border-radius: var(--radius-full);">College ID Perk</span>
+                <span class="fw-bold text-muted" style="font-size: 0.85rem;">All Days</span>
+              </div>
+              <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Group Study Fuel Pack</h3>
+              <p style="color: var(--color-text-muted); font-size: 0.92rem; margin-bottom: 1rem;">
+                Order any 2 regular menu items and get <strong>Free Upgrade to 2 Lemon Iced Teas</strong> or <strong>15% Flat Discount</strong> on showing college ID.
+              </p>
+              <div class="mt-auto d-flex align-items-center justify-content-between pt-3 border-top">
+                <span style="font-size: 1.1rem; font-weight: 700; color: var(--color-chilli-accent);">Free Drinks Upgrade</span>
+                <button type="button" class="btn-chopsticks btn-outline-dark btn-sm-chop" onclick="quickEnquireItem('Group Study Fuel Pack (Student Perk)')">Apply Perk</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEGMENT 6: VALUE COMPARISON BAR (TABLE) -->
+      <section class="section-spacing pt-0">
+        <div class="section-title-wrap">
+          <div class="section-pill-tag">Transparent Savings</div>
+          <h2 class="section-heading">How Much Do You Save?</h2>
+          <p class="section-subtitle">
+            Direct comparison showing a la carte counter prices vs. our bundled combo deal packs.
+          </p>
+        </div>
+
+        <div class="comparison-table-wrap reveal-on-scroll">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Deal Name</th>
+                <th>Included Items</th>
+                <th>Counter Price</th>
+                <th>Combo Price</th>
+                <th>Your Total Savings</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Solo Box 1</strong></td>
+                <td>5 Momos + Mini Hakka Noodles + Iced Tea</td>
+                <td><del>₹245</del></td>
+                <td style="color: var(--color-chilli-accent); font-weight: 800;">₹189</td>
+                <td><span class="save-pill">Save ₹56 (23%)</span></td>
+              </tr>
+              <tr>
+                <td><strong>Solo Box 2</strong></td>
+                <td>5 Fried Momos + Clear Thukpa Soup + Dip</td>
+                <td><del>₹260</del></td>
+                <td style="color: var(--color-chilli-accent); font-weight: 800;">₹199</td>
+                <td><span class="save-pill">Save ₹61 (24%)</span></td>
+              </tr>
+              <tr>
+                <td><strong>The Momo Duo</strong></td>
+                <td>6 Steamed + 6 Fried Momos + 2 Drinks</td>
+                <td><del>₹390</del></td>
+                <td style="color: var(--color-chilli-accent); font-weight: 800;">₹299</td>
+                <td><span class="save-pill">Save ₹91 (23%)</span></td>
+              </tr>
+              <tr>
+                <td><strong>Wok &amp; Roll Platter</strong></td>
+                <td>Large Noodles + Manchurian + 6 Momos + Broth</td>
+                <td><del>₹460</del></td>
+                <td style="color: var(--color-chilli-accent); font-weight: 800;">₹349</td>
+                <td><span class="save-pill">Save ₹111 (24%)</span></td>
+              </tr>
+              <tr>
+                <td><strong>24-Pc Master Platter</strong></td>
+                <td>24 Assorted Momos (4 styles) + All 4 Signature Dips</td>
+                <td><del>₹780</del></td>
+                <td style="color: var(--color-chilli-accent); font-weight: 800;">₹549</td>
+                <td><span class="save-pill">Save ₹231 (30%)</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SEGMENT 7: BULK ORDER & PARTY BOOKING CALLOUT -->
+      <section class="section-spacing pt-0">
+        <div class="visit-banner-box reveal-on-scroll" style="background: linear-gradient(135deg, #423838 0%, #2A2323 100%);">
+          <div>
+            <div class="stall-timing-pill">
+              <span>🎉</span> Party, College &amp; Office Catering
+            </div>
+            <h2>Hosting a Party or Office Celebration?</h2>
+            <p>
+              Pre-order hot momo platters (50, 100, or 200 pieces) in thermal insulated boxes with squeeze dip bottles. Guaranteed fresh, on-time, and fiery!
+            </p>
+            <div class="d-flex align-items-center gap-3 text-white-50 small">
+              <span>✓ Custom spice adjustments</span>
+              <span>✓ Separate pure-veg packaging</span>
+              <span>✓ Complimentary bamboo chopsticks</span>
+            </div>
+          </div>
+          <div class="visit-banner-actions">
+            <a href="contact.html?type=bulk#orderFormSection" class="btn-chopsticks btn-primary-chilli w-100">
+              Enquire Bulk Catering
+            </a>
+            <a href="tel:+919876543210" class="btn-chopsticks btn-outline-dark w-100" style="color: #FFF !important; border-color: rgba(255,255,255,0.4);">
+              Call Counter: +91 98765 43210
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       GLOBAL FOOTER (ON ALL 4 PAGES)
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div>
+          <a href="index.html" class="brand-logo-link footer-brand-logo-link" aria-label="Chopsticks Home">
+            <svg class="brand-logo-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="30" fill="#FCF2E5" stroke="#EC5B38" stroke-width="2.5"/>
+              <!-- Steam Wisps -->
+              <path d="M26 19C25 15 28 12 26 9" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+              <path d="M32 17C31 13 34 11 32 8" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+              <path d="M38 19C37 15 40 12 38 9" stroke="#EC5B38" stroke-width="2" stroke-linecap="round"/>
+              <!-- Momo -->
+              <path d="M20 36C20 28 25 24 32 24C39 24 44 28 44 36C44 42 38 45 32 45C26 45 20 42 20 36Z" fill="#FFFFFF" stroke="#524646" stroke-width="2"/>
+              <path d="M26 28C28 30 29 32 29 35M32 25V35M38 28C36 30 35 32 35 35" stroke="#A8A492" stroke-width="1.5" stroke-linecap="round"/>
+              <!-- Crossed Chopsticks -->
+              <line x1="12" y1="20" x2="52" y2="48" stroke="#524646" stroke-width="3.5" stroke-linecap="round"/>
+              <line x1="52" y1="20" x2="12" y2="48" stroke="#EC5B38" stroke-width="3.5" stroke-linecap="round"/>
+              <circle cx="32" cy="34" r="2.5" fill="#EC5B38"/>
+            </svg>
+            <div class="brand-text-wrap">
+              <span class="brand-name footer-brand-name">Chopsticks</span>
+              <span class="brand-subtitle">MOMOS &amp; CHINESE</span>
+            </div>
+          </a>
+          <p class="footer-desc mt-2">
+            Authentic street-style momos and high-heat wok Chinese fast eats. Rolled fresh daily with love, spices, and secret sauces.
+          </p>
+          <div class="fssai-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>FSSAI Certified Stall #20824003001842</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Quick Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home 1: Classic Street</a></li>
+            <li><a href="home-2.html">Home 2: Steamed vs Fried</a></li>
+            <li><a href="about.html">About Chopsticks</a></li>
+            <li><a href="menu.html">Full Menu by Category</a></li>
+            <li><a href="combos.html">Combos &amp; Student Deals</a></li>
+            <li><a href="blog.html">Street Food Blog</a></li>
+            <li><a href="contact.html">Order Takeaway</a></li>
+          </ul>
+        </div>
+
+        <!-- Stall Timings Recap -->
+        <div>
+          <h4 class="footer-col-title">Operating Hours</h4>
+          <p class="footer-timings-p">
+            <strong>Monday – Friday:</strong><br>
+            12:00 PM – 11:00 PM
+          </p>
+          <p class="footer-timings-p">
+            <strong>Saturday – Sunday:</strong><br>
+            11:30 AM – 11:30 PM
+          </p>
+          <span style="color: #FFD285; font-size: 0.85rem; font-weight: 600;">⚡ Evening Rush: 5:00 PM – 9:00 PM</span>
+        </div>
+
+        <!-- Location & Socials -->
+        <div>
+          <h4 class="footer-col-title">Find Our Stall</h4>
+          <p class="footer-timings-p">
+            Kiosk #14, Opposite Exit 2, Central Metro Station, Commercial Food Street.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="contact.html#stallMap" class="social-icon-btn" aria-label="Google Maps Location">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 Chopsticks Momos &amp; Chinese Street Food Stall. All rights reserved.</div>
+        <div>Handcrafted with passion for street food lovers &amp; evening snackers.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Core Custom JS -->
+  <script src="main.js"></script>
+</body>
+</html>
+
